@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html>
+    <!--i think we should make sure it works for mobile and computer displays of any size-->
     <head>
-         <title>Saratoga High School Environmental Science Club</title>
-         <meta charset="utf-8">
-         <style>
-           #Title{
-              text-align: center;
-      
-           }  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Saratoga High School Environmental Science Club</title>
+        <meta charset="utf-8">
+        <style>
+            #banner{
+                top: 0%;
+                user-drag: none;
+                -webkit-user-drag: none;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }    
+            #brandLogo{
+            	position: fixed;
+                text-align: left;
+            }
+            <!--would contain About Us, Petitions, etc.-->
+            #fullMenu{
+            
+            }
+            <!--Expandable Menu for mobile-->
+            #dropdown{
 
-         </style>
+            }
+            @media only screen and (min-width: 770px) {
+                #dropdown {
+                   display: none;
+                }
+            }
+            @media only screen and (max-width: 769px) {
+                #fullMenu {
+                    display: none;
+                }
+            }
+            .para1{
+                text-align: left;
+            }  
+        </style>
     </head>
     <body style="background-color:White;">
-
+        <!--not imported yet-->
+        <img id = "banner"  src="banner.svg" style="max-width:100%;height:auto;">
+        <img id = "brandLogo" src="branddisplay.svg" style="max-width:100%;height:auto;">
+        <img id = "dropdown" src="dropdown.svg" style="max-width:100%;height:auto;">
     </body>
 </html>
