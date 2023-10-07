@@ -6,10 +6,6 @@
         <title>Environmental Action</title>
         <meta charset="utf-8">
         <style>
-            #temporary{
-                height: 10%;
-                width: 10%;
-            }
             Body {
                 background-image: url('images/wiped.svg');
                 background-position: center top;
@@ -20,13 +16,23 @@
                 overflow-y: scroll;
                 overflow-x: hidden;
             }    
+            <!--would contain About Us, Petitions, etc.-->
+            .topBanner{
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                overflow-x: hidden;
+            }    
+            #temporary{
+                height: 10%;
+                width: 10%;
+                z-index: 2;
+            }
             #brandLogo{
             	position: fixed;
                 text-align: left;
-            }
-            <!--would contain About Us, Petitions, etc.-->
-            #fullMenu{
-            
             }
             <!--Expandable Menu for mobile-->
             #dropdown{
@@ -38,7 +44,7 @@
                 }
             }
             @media only screen and (max-width: 769px) {
-                #fullMenu {
+                .topBanner {
                     display: none;
                 }
             }
@@ -50,9 +56,10 @@
     </head>
     <body style="background-color:White;">
         <!--not imported yet-->
+        <img class = "TopBanner" src="images/TopBanner.png" style="max-width:100%;height:auto;">
         <img id = "brandLogo" src="branddisplay.svg" style="max-width:100%;height:auto;">
-        <img id = "dropdown" src="dropdown.svg" style="max-width:100%;height:auto;">
         <img id = "temporary" src="images/LiRichardLeaf.png" style="max-width:100%;height:auto;">
+        <img id = "dropdown" src="dropdown.svg" style="max-width:100%;height:auto;">
 
         
     </body>
