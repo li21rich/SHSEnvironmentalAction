@@ -7,10 +7,11 @@
         <meta charset="utf-8">
         <style>
             Body {
+                --scaler: 100vw;
                 background-image: url('images/wiped.svg');
                 background-position: center top;
                 height: 222.280334728vw;
-                background-size: 100vw auto;
+                background-size: var(--scaler, 100vw) auto;
                 background-attachment: scroll;
                 background-repeat: no-repeat;
                 overflow-y: scroll;
