@@ -54,6 +54,7 @@
                 text-align: left;
             }  
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="icon" type="image/x-icon" href="roundbg.png">
     </head>
     <body style="background-color:White;">
@@ -63,6 +64,17 @@
         <img id = "temporary" src="images/LiRichardLeaf.png" style="max-width:100%;height:auto;">
         <img id = "dropdown" src="dropdown.svg" style="max-width:100%;height:auto;">
 
+        <script>
+            $(document).ready(function() {
+            const initialHeight = window.innerHeight * 2.22; // Set the initial height as 222vh
+
+            $(window).resize(function() {
+                const currentHeight = window.innerHeight;
+                const scaleFactor = currentHeight / initialHeight;
+                $('body').css('background-size', `auto ${initialHeight * scaleFactor}px`);
+            });
+        });
+        </script>
         
     </body>
 </html>
