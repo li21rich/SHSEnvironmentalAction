@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Environmental Action</title>
         <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <style>
             Body {
                 background-image: url('images/wiped.svg');
@@ -72,16 +73,42 @@
                 font-family: 'Roboto';
                 font-size: 1.3rem;
                 text-align: center;
-                display: inline-block;
+                display: inline-block
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            <!--Mini animation borrowed from w3 schools-->
+            .BannerButtons:after {
+                  content: "";
+                  background: #f1f1f1;
+                  display: block;
+                  position: absolute;
+                  padding-top: 300%;
+                  padding-left: 350%;
+                  margin-left: -20px !important;
+                  margin-top: -120%;
+                  opacity: 0;
+                  transition: all 0.8s
+            }
+            .BannerButtons:active:after {
+              padding: 0;
+              margin: 0;
+              opacity: 1;
+              transition: 0s
+            }
+            .BannerButtons:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
             }
             .ArticlesButton{
-                left: 73vw;
+                left: 70vw;
             }
             .CampaignsButton{
-                left: 85vw;
+                left: 82vw;
             }
             .AboutUsButton{
-                left: 97vw;
+                left: 94vw;
                 background-color: #37512cff;
                 color: #b4f796;
             }
