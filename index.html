@@ -107,16 +107,6 @@
                 right: 3vw;
                 <!--float:right;-->
             }
-            @media only screen and (min-width: 770px) {
-                .dropdown {
-                   display: none;
-                }
-            }
-            @media only screen and (max-width: 769px) {
-                .BannerButtons {
-                    display: none;
-                }
-            }
             .para1{
                 text-align: left;
             }  
@@ -143,12 +133,23 @@
                 width:14%;
                 top:1%;
             }
+            <!--mobile/small screen activation-->
+            <!--large-->
             @media only screen and (max-width: 1000px) {
                 #halftone {
                     display: none;
                 }
                 .introduction{
                     width: 100%;
+                }
+                .BannerButtons {
+                    display: none;
+                }
+            }
+            <!--small-->
+            @media only screen and (min-width: 1001px) {
+                .dropdown {
+                   display: none;
                 }
             }
         </style>
