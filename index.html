@@ -167,11 +167,17 @@
             }
             <!--JQuery imported because convenient-->
             $(document).ready(adjustSize);
-            <!--$(window).on('resize',adjustSize);-->
+            $(window).on('resize',zoomAdjust);
+            var originalWindow = window.innerWidth();
             function adjustSize() {
                 var element = $(".BannerButtons");
                 var curWidth = element.width();
                 element.width(curWidth * 2);
+            }
+            function zoomAdjust(){
+                var element = $(".BannerButtons");
+                var curWidth = element.width();
+                element.width(curWidth * (window.innerWidth()/originalWindow));
             }
             
             $('#canvas').mousedown(function(){          
