@@ -164,14 +164,13 @@
         </div>
         <script>
             <!--JQuery imported because convenient-->
-            $(document).ready(function() {
-                $(window).trigger('resize');
-            });
-            $(window).on('resize',function() 
+            $(document).ready(adjustSize);
+            $(window).on('resize',adjustSize);
+            function adjustSize() {
                 var element = $(".BannerButtons");
                 var curWidth = element.width();
                 element.width(curWidth * 2);
-            });
+            }
             
             $('#canvas').mousedown(function(){          
                 $(this).css('cursor','move');
