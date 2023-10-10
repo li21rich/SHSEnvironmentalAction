@@ -20,6 +20,13 @@
                 overflow-x: hidden;
                 font-size: 100%;
             }    
+            .referencePoint{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 1px;
+                width: 1px;
+            }
             #TopBanner{
                 width: 108%;
                 min-width: 1250px;
@@ -167,6 +174,9 @@
                 <img src="images/BrandText.svg" alt="Environmental Action Club Logo">
             </div>
         </a>
+        <div class = "referencePoint">
+            <p></p>
+        </div>
         <div class="introduction">
             <h2 class = "introTitle">Introduction</h2>
             <p>We are a passionate team of youth environmental activists, primarily from Saratoga High School. One of our focuses are environmentally impactful bills, such as SB499, AB1423, and SB676.</p>
@@ -174,7 +184,7 @@
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
-                $('#TopBanner')[0].scrollIntoView();
+                $('.referencePoint')[0].scrollIntoView();
             });
             $('#canvas').mousedown(function(){          
                 $(this).css('cursor','move');
