@@ -87,7 +87,7 @@
                 z-index: 2;
                 word-wrap: break-word;
                 margin-right: 1.5vw;
-                <!--clear: both;-->
+                width:11vw;
             }
             .BannerButtons:hover {
                 box-shadow: 0 7px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -177,16 +177,16 @@
             var originalWindow = window.innerWidth();
             function onStart() {
                 window.scrollTo(0, 0);
-                var element = $(".BannerButtons");
+                /*var element = $(".BannerButtons");
                 var curWidth = element.width();
-                element.width(curWidth * 2);
+                element.width(curWidth * 2);*/
             }
-            $(window).on('resize',zoomAdjust);
+            /*$(window).on('resize',zoomAdjust);
             function zoomAdjust(){
                 var element = $(".BannerButtons");
                 var curWidth = element.width();
                 element.width(curWidth * (window.innerWidth()/originalWindow));
-            }
+            }*/
             
             $('#canvas').mousedown(function(){          
                 $(this).css('cursor','move');
