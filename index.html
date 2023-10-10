@@ -174,7 +174,7 @@
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
-                $('#TopBanner').scrollIntoView();
+                $('#TopBanner')[0].scrollIntoView();
             });
             $('#canvas').mousedown(function(){          
                 $(this).css('cursor','move');
