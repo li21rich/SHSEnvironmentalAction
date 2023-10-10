@@ -162,6 +162,9 @@
             <p>We are a passionate team of youth environmental activists, primarily from Saratoga High School. One of our focuses are environmentally impactful bills, such as SB499, AB1423, and SB676.</p>
         </div>
         <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
             <!--JQuery imported because convenient-->
             $(document).ready(adjustSize);
             $(window).on('resize',adjustSize);
