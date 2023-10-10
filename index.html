@@ -82,6 +82,8 @@
                 font-weight: bold;
                 z-index: 2;
                 word-wrap: break-word;
+                margin-right: 1.5vw;
+                float:right;
                 
             }
             .BannerButtons:hover {
@@ -132,7 +134,7 @@
             $(document).ready(function() {
                 var element = $(".BannerButtons");
                 var curWidth = element.width();
-                element.width(curWidth * 1.4);
+                element.width(curWidth * 2);
             });
         </script>
         <button class="BannerButtons ArticlesButton">Articles</button>
