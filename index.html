@@ -193,7 +193,7 @@
                 return false;       
             });
             window.addEventListener("keydown", function(e) {
-                if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                if(e.key.startsWith("ArrowL") || e.key.startsWith("ArrowR")) {
                     e.preventDefault();
                 }
             }, false);
