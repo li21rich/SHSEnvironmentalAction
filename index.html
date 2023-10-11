@@ -183,7 +183,8 @@
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
-                $('#referencePoint').scrollIntoView(true);
+                var element = document.querySelector('#referencePoint');
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
             $('#canvas').mousedown(function(){          
                 $(this).css('cursor','move');
