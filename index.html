@@ -25,6 +25,7 @@
                 top: 0px;
                 left: 0px;
                 height: 2px;
+                width: 100vw;
                 opacity: 0.0;
             }
             #TopBanner{
@@ -183,7 +184,6 @@
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
                 $('#referencePoint').scrollIntoView(true);
-                $('#referencePoint').width($('#TopBanner').innerWidth());
             });
             $('#canvas').mousedown(function(){          
                 $(this).css('cursor','move');
