@@ -74,12 +74,6 @@
                 max-width: 100%;
                 max-height: 100%;
             }
-            #temporary{
-                position: absolute;
-                height: 5%;
-                left: 92vw;   
-                z-index: 2;
-            }
             <!--Expandable Menu for mobile vs PC Buttons-->
             .dropdown{
 
@@ -128,9 +122,13 @@
                 right: 3vw;
                 <!--float:right;-->
             }
-            .para1{
-                text-align: left;
-            }  
+            .CustomLeaf{
+                content:url("images/LiRichardLeaf.png");
+                position: relative;
+                height: 6%;
+                right:24vw;
+                z-index: 2;
+            }
             .introduction{
                 position: relative;
                 float: left;
@@ -176,7 +174,6 @@
     </head>
     <body style="background-color:White;">
         <img id = "TopBanner" src="images/TopBanner.png">
-        <img id = "temporary" src="images/LiRichardLeaf.png">
         <img id = "halftone" src="images/halftone.svg">
         <img class = "dropdown" src="dropdown.svg" onerror="this.style.display='none'">
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
@@ -187,7 +184,7 @@
                 <img src="images/BrandText.svg" alt="Environmental Action Club Logo">
             </div>
         </a>
-        <img id = "referencePoint" src="images/LiRichardLeaf.png">
+        <img id = "referencePoint" src="images/CustomLeaf.png">
         <div class="introduction">
             <h2 class = "introTitle">Introduction</h2>
             <p>We are a passionate team of youth environmental activists, primarily from Saratoga High School. One of our focuses are environmentally impactful bills, such as SB499, AB1423, and SB676.</p>
@@ -208,8 +205,15 @@
                 }
             }, false);
         </script>
-        <button class="BannerButtons ArticlesButton">Articles</button>
-        <button class="BannerButtons CampaignsButton">Campaigns</button>
-        <button class="BannerButtons AboutUsButton">About Us</button>
+        <button class="BannerButtons ArticlesButton">Articles
+            <img class = "CustomLeaf LeafOne"/>
+        </button>
+        <button class="BannerButtons CampaignsButton">Campaigns
+            <img class = "CustomLeaf LeafTwo"/>
+        </button>
+        <button class="BannerButtons AboutUsButton">About Us
+            <img class = "CustomLeaf LeafThree"/>
+        </button>
+        
     </body>
 </html>
