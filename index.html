@@ -39,6 +39,7 @@
             a:-webkit-any-link:not(.icon) {
                 color: inherit !important;
                 text-decoration: none !important;
+                display: inherit;
             }
             .LinksMenu {
                 position: absolute;
@@ -50,11 +51,15 @@
                 display: none;
                 text-decoration: none;
                 font-family: Montserrat;
-                font-weight: 400;
-                font-size:1rem;
+                font-weight: bold;
+                line-height:1.6;
+                font-size:2.3rem;
                 background-color: #37512cff;
                 color: #F5F5EF;
                 z-index: 3;
+            }
+            #about, #campaigns, #articles{
+                padding-left: 4%;
             }
             #referencePoint{
                 position: absolute;
@@ -232,7 +237,7 @@
                 position: relative;
                 font-size: clamp(2.17rem, 2.9vw, 8.4rem);
                 font-family: Montserrat;
-                font-weight: 400;
+                font-weight: bold;
                 text-align: center;
                 clear:both;
                 width:100vw;
