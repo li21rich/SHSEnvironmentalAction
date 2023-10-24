@@ -29,11 +29,25 @@
                 color: inherit !important;
                 text-decoration: none !important;
             }
+            .icon {
+                color: #F5F5EF !important;
+                padding-top: 5%;
+                padding-right: 3%;
+                display: block;
+                position: absolute;
+                font-size:4rem;
+                right: 0;
+                top: 0;
+                z-index:1;
+            }
             .LinksMenu {
                 position: absolute;
+                right: 0px;
+                top: 1vh;
+                width: 40vw;
+                padding: 0%;
                 display: block;
                 display: none;
-                padding: 1%;
                 text-decoration: none;
                 font-family: Montserrat;
                 font-weight: 400;
@@ -41,16 +55,6 @@
                 background-color: #37512cff;
                 color: #F5F5EF;
                 z-index: 3;
-            }
-            .icon {
-                color: white;
-                padding: 1.5%;
-                display: block;
-                position: absolute;
-                font-size:2rem;
-                right: 0;
-                top: 0;
-                z-index:1;
             }
             #referencePoint{
                 position: absolute;
@@ -303,7 +307,7 @@
             }
             @media screen and (max-width: 920px) {
                 #halftone, .BannerButtons, .CustomLeaf {
-                    display: none;
+                    display: none !important;
                 }
                 .introduction {
                     width: 100%;
