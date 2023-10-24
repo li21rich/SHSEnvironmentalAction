@@ -123,11 +123,9 @@
             }
             .ArticlesButton{
                 right: 28vw;
-                <!--float:right;-->
             }
             .CampaignsButton{
                 right: 15.5vw;
-                <!--float:right;-->
             }
             .AboutUsButton{
                 /*
@@ -135,7 +133,6 @@
                 color: #F5F5EF;
                 */
                 right: 3vw;
-                <!--float:right;-->
             }
             .CustomLeaf{
                 content:url("images/CustomLeaf.png");
@@ -384,17 +381,13 @@
                 }
             }, false);
             function dropdown() {
-              var x = $("#myLinks");
-              if (x.css("display") === "block") {
-                x.css("display", "none");
-              } else {
-                x.css("display", "block");
-              }
+                 var x = $("#myLinks");
+                if (x.is(":visible")) {
+                    x.hide();
+                } else {
+                    x.show();
+                }
             }
-            var scale = 'scale(1)';
-            document.body.style.webkitTransform =  scale;   
-            document.body.style.msTransform =   scale;       
-            document.body.style.transform = scale; 
         </script>
         <button class="BannerButtons ArticlesButton">Articles
         </button>
