@@ -404,6 +404,13 @@
                     x.show();
                 }
             }
+            function checkWindowWidth() {
+                if ($(window).width() >= 921) {
+                    $(".LinksMenu").hide();
+                }
+            }
+            $(window).resize(checkWindowWidth);
+            checkWindowWidth();
         </script>
     </body>
 </html>
