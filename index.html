@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Montserrat:400,700' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             html {
                 overflow-x: hidden;
@@ -25,14 +26,11 @@
                 margin: 0;
             }    
             @media only screen and (max-width: 920px) {
-                #halftone {
+                #halftone, .BannerButtons, .LeafOne, .LeafTwo, .LeafThre {
                     display: none;
                 }
                 .introduction{
                     width: 100%;
-                }
-                .BannerButtons, .LeafOne, .LeafTwo, .LeafThree{
-                    display: none;
                 }
             }
             @media only screen and (min-width: 921px) {
@@ -89,9 +87,35 @@
                 max-width: 100%;
                 max-height: 100%;
             }
-            <!--Expandable Menu for mobile vs PC Buttons-->
-            .dropdown{
-
+            .dropdown {
+              overflow: hidden;
+              background-color: #333;
+              position: relative;
+            }
+            .dropdown #myLinks {
+              display: none;
+            }
+            .dropdown a {
+              color: white;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+              display: block;
+            }
+            .dropdown a.icon {
+              background: black;
+              display: block;
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+            .dropdown a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            .active {
+              background-color: #04AA6D;
+              color: white;
             }
             .BannerButtons{
                 position: absolute;
@@ -251,6 +275,7 @@
                 top:1.5%;
                 left:37%;
                 width:20vw;
+                clear:both;
             }
             .TransparentBoxes{
                 background-color:rgba(120,120,120,0.2);
@@ -293,7 +318,19 @@
     <body style="background-color:White;">
         <img id = "TopBanner" src="images/TopBanner.png">
         <img id = "halftone" src="images/halftone.svg">
-        <img class = "dropdown" src="dropdown.svg" onerror="this.style.display='none'">
+        <div class="dropdown">
+          <a href="#home" class="active">Logo</a>
+          <!-- links, default hidden -->
+          <div id="myLinks">
+            <a href="#articles">News</a>
+            <a href="#campaigns">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
             <div class="logoBox">
                 <img src="images/birdgreen.svg" alt="Environmental Action Club Logo">
@@ -351,6 +388,14 @@
                     e.preventDefault();
                 }
             }, false);
+            function dropdown() {
+              var x = $("#myLinks");
+              if (x.css("display") === "block") {
+                x.css("display", "none");
+              } else {
+                x.css("display", "block");
+              }
+            }
         </script>
         <button class="BannerButtons ArticlesButton">Articles
         </button>
