@@ -229,13 +229,32 @@
                 width:14.92vw;
             }
             .SpeechBubble{
-                left:12%;
+                left:-1%;
                 width:16vw;
             }
             .Goggles{
-                top:1.1%:
-                right:12%;
+                top:1.5%;
+                left:37%:
                 width:20vw;
+            }
+            .TransparentBoxes{
+                background-color: rgba(0,0,0,.2);
+                height: 25vh;
+                width: 17vw;
+                position: relative;
+                margin-top: 0.1%;
+                margin-bottom: 1.1%;
+                margin-left:0%;
+                margin-right:0%;
+            }
+            .box1{
+                left:18%;
+            }
+            .box2{
+                left:30%;
+            }
+            .box3{
+                left:48%;
             }
             @media only screen and (max-width: 920px) {
                 #halftone {
@@ -294,6 +313,9 @@
         <img class = "GreenElements TallBird" src = "images/tallbird.png">
         <img class = "GreenElements SpeechBubble" src = "images/SpeechBubble.PNG">
         <img class = "GreenElements Goggles" src = "images/tinygoggles.svg">
+        <div class = "transparentBoxes box1"></div>
+        <div class = "transparentBoxes box2"></div>
+        <div class = "transparentBoxes box3"></div>
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
