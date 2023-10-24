@@ -42,12 +42,6 @@
                 top: 0;
                 z-index:3;
             }
-            .icon:focus + .LinksMenu, .LinksMenu:hover {
-                display: block
-            }
-            .icon:focus {
-                background-color: black;
-            }
             a:-webkit-any-link:not(.icon) {
                 color: inherit !important;
                 text-decoration: none !important;
@@ -353,7 +347,7 @@
             <a href="#campaigns" style="padding-left: 12%;">Campaign</a>
             <a href="#about" style="padding-left: 12%;">About Us</a>
         </div>
-        <a href="javascript:void(0);" class="icon" tabindex="1"/*onclick="dropdown()"*/>
+        <a href="javascript:void(0);" class="icon" onclick="dropdown()">
             <i class="fa fa-bars"></i>
         </a>
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
@@ -424,16 +418,17 @@
                     e.preventDefault();
                 }
             }, false);
-            /*function dropdown() {
-                var x = $(".LinksMenu");
-                if (x.is(":visible")) {
-                    x.hide();
-                    $("icon").css("background-color", "transparent");
+            function dropdown() {
+                var linksMenu = document.querySelector(".LinksMenu");
+                var icon = document.querySelector(".icon");
+                if (linksMenu.style.display === "block") {
+                    linksMenu.style.display = "none";
+                    icon.style.backgroundColor = "transparent";
                 } else {
-                    x.show();
-                    $(".icon").css("background-color", "black");
+                    linksMenu.style.display = "block";
+                    icon.style.backgroundColor = "black";
                 }
-            }*/
+            }
             /*
             function checkWindowWidth() {
                 if ($(window).width() >= 921) {
