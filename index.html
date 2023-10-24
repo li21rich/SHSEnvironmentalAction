@@ -27,6 +27,7 @@
             }    
             .icon {
                 color: #F5F5EF !important;
+                background-color: transparent;
                 margin-top: 4.4vw;
                 margin-right: 2vw;
                 padding: 1vw;
@@ -408,6 +409,7 @@
                 var x = $(".LinksMenu");
                 if (x.is(":visible")) {
                     x.hide();
+                    $("icon").css("background-color", "transparent");
                 } else {
                     x.show();
                     $(".icon").css("background-color", "black");
@@ -416,6 +418,7 @@
             function checkWindowWidth() {
                 if ($(window).width() >= 921) {
                     $(".LinksMenu").hide();
+                    $("icon").css("background-color", "transparent");
                 }
             }
             $(window).resize(checkWindowWidth);
