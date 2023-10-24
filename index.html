@@ -30,22 +30,20 @@
               color: black;
               padding: 1%;
               text-decoration: none;
+              font-family: Montserrat;
+              font-weight: 400;
               font-size:1rem;
               display: block;
             }
-            a.icon {
-              color: black;
-              padding: 1%;
+            .icon {
+              color: white;
+              padding: 1.5%;
               display: block;
               position: absolute;
-              font-size:1.7rem;
+              font-size:2rem;
               right: 0;
               top: 0;
               z-index:1;
-            }
-            .active {
-              background-color: #FFF;
-              color: white;
             }
             #referencePoint{
                 position: absolute;
@@ -296,7 +294,7 @@
                 top:50%;
             }
             @media screen and (min-width: 921px) {
-                .dropdown {
+                #myLinks, .icon {
                    display: none;
                 }
             }
@@ -392,7 +390,7 @@
                 }
             }, false);
             function dropdown() {
-                 var x = $("#myLinks");
+                var x = $("#myLinks");
                 if (x.is(":visible")) {
                     x.hide();
                 } else {
