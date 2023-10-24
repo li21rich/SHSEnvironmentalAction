@@ -95,26 +95,15 @@
             .dropdown #myLinks {
               display: none;
             }
-            .dropdown a {
-              color: white;
-              padding: 14px 16px;
-              text-decoration: none;
-              font-size: 17px;
-              display: block;
-            }
-            .dropdown a.icon {
+            .dropdown icon {
               background: black;
               display: block;
               position: absolute;
               right: 0;
               top: 0;
             }
-            .dropdown a:hover {
-              background-color: #ddd;
-              color: black;
-            }
             .active {
-              background-color: #04AA6D;
+              background-color: #FFF;
               color: white;
             }
             .BannerButtons{
@@ -319,14 +308,11 @@
         <img id = "TopBanner" src="images/TopBanner.png">
         <img id = "halftone" src="images/halftone.svg">
         <div class="dropdown">
-          <a href="#home" class="active">Logo</a>
-          <!-- links, default hidden -->
           <div id="myLinks">
             <a href="#articles">News</a>
             <a href="#campaigns">Contact</a>
             <a href="#about">About</a>
           </div>
-          <!-- dropdown button -->
           <a href="javascript:void(0);" class="icon" onclick="dropdown()">
             <i class="fa fa-bars"></i>
           </a>
