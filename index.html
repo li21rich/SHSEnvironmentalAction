@@ -28,6 +28,7 @@
             .icon {
                 color: #F5F5EF !important;
                 background-color: transparent;
+                transition: color 0.3s;
                 margin-top: 3vh;
                 margin-right: 2vw;
                 padding-left: 8%;
@@ -41,11 +42,11 @@
                 top: 0;
                 z-index:3;
             }
-            .icon:hover, .icon:active{
-                background-color: black;
+            .icon:focus + .LinksMenu, .LinksMenu:hover {
+                display: block
             }
-            .icon:hover .LinksMenu, .icon:active .LinksMenu {
-                visibility: visible;
+            .icon:focus {
+                background-color: black;
             }
             a:-webkit-any-link:not(.icon) {
                 color: inherit !important;
@@ -53,15 +54,16 @@
                 display: inherit;
             }
             .LinksMenu {
-                visibility: hidden;
+                display: block;
+                display: none;
+                opacity: 0; /* Initially set opacity to 0 */
+                transition: opacity 0.3s;
                 position: absolute;
                 right: 0px;
                 top: 12vh;
                 width: 50vw;
                 padding-top: 2%;
                 padding-bottom:2%;
-                display: block;
-                display: none;
                 text-decoration: none;
                 font-family: Montserrat;
                 font-weight: 400;
