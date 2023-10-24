@@ -25,6 +25,9 @@
                 font-size: 100%;
                 margin: 0;
             }    
+            a {
+              color: inherit;
+            }
             #referencePoint{
                 position: absolute;
                 top: 0px;
@@ -73,7 +76,7 @@
                 margin 0 auto;
                 max-width: 100%;
                 max-height: 100%;
-            }/*
+            }
             .dropdown {
               overflow: hidden;
               background-color: #333;
@@ -92,7 +95,7 @@
             .active {
               background-color: #FFF;
               color: white;
-            }*/
+            }
             .BannerButtons{
                 position: absolute;
                 border-radius: 9px;
@@ -312,7 +315,6 @@
     <body style="background-color:White;">
         <img id = "TopBanner" src="images/TopBanner.png">
         <img id = "halftone" src="images/halftone.svg">
-        /*
         <div class="dropdown">
           <div id="myLinks">
             <a href="#articles">News</a>
@@ -323,7 +325,6 @@
             <i class="fa fa-bars"></i>
           </a>
         </div>
-        */
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
             <div class="logoBox">
                 <img src="images/birdgreen.svg" alt="Environmental Action Club Logo">
@@ -391,7 +392,7 @@
                 if(e.key.startsWith("Arrow")) {
                     e.preventDefault();
                 }
-            }, false);/*
+            }, false);
             function dropdown() {
                  var x = $("#myLinks");
                 if (x.is(":visible")) {
@@ -399,7 +400,7 @@
                 } else {
                     x.show();
                 }
-            }*/
+            }
         </script>
     </body>
 </html>
