@@ -424,16 +424,20 @@
                     icon.style.backgroundColor = "black";
                 }
             }
-            /*
-            function checkWindowWidth() {
-                if ($(window).width() >= 921) {
-                    $(".LinksMenu").hide();
-                    $("icon").css("background-color", "transparent");
+            $(document).on('click', function(event) {
+                var linksMenu = $('.LinksMenu');
+                var icon = $('.icon');
+                if (linksMenu.is(':visible') && !linksMenu.is(event.target) && !icon.is(event.target)) {
+                    linksMenu.hide();
+                    icon.css('background-color', 'transparent');
                 }
-            }
-            $(window).resize(checkWindowWidth);
-            checkWindowWidth();
-            */
+            });
+            $(window).resize(function() {
+                if ($(window).width() > 920) {
+                    $('.LinksMenu').hide();
+                    $('.icon').css('background-color', 'transparent');
+                }
+            });
         </script>
     </body>
 </html>
