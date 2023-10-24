@@ -28,19 +28,15 @@
             a {
               color: inherit;
             }
-            .dropdown {
-              overflow: hidden;
-              position: relative;
-            }
-            .dropdown #myLinks {
-              display: none;
-            }
             .dropdown icon {
               background: black;
               display: block;
               position: absolute;
               right: 0px;
               top: 0px;
+            }
+            .dropdown #myLinks {
+              display: none;
             }
             .active {
               background-color: #FFF;
@@ -314,16 +310,14 @@
     <body style="background-color:White;">
         <img id = "TopBanner" src="images/TopBanner.png">
         <img id = "halftone" src="images/halftone.svg">
-        <div class="dropdown">
-          <div id="myLinks">
-            <a href="#articles">News</a>
-            <a href="#campaigns">Contact</a>
-            <a href="#about">About Us</a>
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="dropdown()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
+      <div id="myLinks">
+        <a href="#articles">News</a>
+        <a href="#campaigns">Contact</a>
+        <a href="#about">About Us</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+        <i class="fa fa-bars"></i>
+      </a>
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
             <div class="logoBox">
                 <img src="images/birdgreen.svg" alt="Environmental Action Club Logo">
