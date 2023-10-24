@@ -234,13 +234,13 @@
             }
             .Goggles{
                 top:1.5%;
-                left:37%:
+                left:37%;
                 width:20vw;
             }
             .TransparentBoxes{
-                background-color: rgba(0,0,0,.2);
+                background-color:rgba(120,120,120,0.2);
                 height: 25vh;
-                width: 17vw;
+                width: 19vw;
                 position: relative;
                 margin-top: 0.1%;
                 margin-bottom: 1.1%;
@@ -255,6 +255,19 @@
             }
             .box3{
                 left:48%;
+            }
+            .TransparencyGradients{
+                background: rgb(0,0,0);
+                background: linear-gradient(0deg, rgba(0,0,0,0.5130427170868348) 7%, rgba(0,0,0,0.33657212885154064) 31%, rgba(255,255,255,0) 84%);
+                height:4vh;
+                width:15vw;
+                position:absolute;
+                margins:0px;
+            .gradient1{
+            }
+            .gradient2{
+            }
+            .gradient3{
             }
             @media only screen and (max-width: 920px) {
                 #halftone {
@@ -313,9 +326,15 @@
         <img class = "GreenElements TallBird" src = "images/tallbird.png">
         <img class = "GreenElements SpeechBubble" src = "images/SpeechBubble.PNG">
         <img class = "GreenElements Goggles" src = "images/tinygoggles.svg">
-        <div class = "transparentBoxes box1"></div>
-        <div class = "transparentBoxes box2"></div>
-        <div class = "transparentBoxes box3"></div>
+        <div class = "transparentBoxes box1">
+            <div class = "TransparencyGradients gradient1"></div>
+        </div>
+        <div class = "transparentBoxes box2">
+            <div class = "TransparencyGradients gradient2"></div>
+        </div>
+        <div class = "transparentBoxes box3">
+            <div class = "TransparencyGradients gradient3"></div>
+        </div>
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
