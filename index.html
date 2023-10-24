@@ -41,12 +41,19 @@
                 top: 0;
                 z-index:3;
             }
+            .icon:hover, .icon:active{
+                background-color: black;
+            }
+            .icon:hover .LinksMenu, .icon:active .LinksMenu {
+                visibility: visible;
+            }
             a:-webkit-any-link:not(.icon) {
                 color: inherit !important;
                 text-decoration: none !important;
                 display: inherit;
             }
             .LinksMenu {
+                visibility: hidden;
                 position: absolute;
                 right: 0px;
                 top: 12vh;
@@ -344,7 +351,7 @@
             <a href="#campaigns" style="padding-left: 12%;">Campaign</a>
             <a href="#about" style="padding-left: 12%;">About Us</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+        <a href="javascript:void(0);" class="icon" /*onclick="dropdown()"*/>
             <i class="fa fa-bars"></i>
         </a>
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
@@ -415,6 +422,7 @@
                     e.preventDefault();
                 }
             }, false);
+            /*
             function dropdown() {
                 var x = $(".LinksMenu");
                 if (x.is(":visible")) {
@@ -431,6 +439,7 @@
                     $("icon").css("background-color", "transparent");
                 }
             }
+            */
             $(window).resize(checkWindowWidth);
             checkWindowWidth();
         </script>
