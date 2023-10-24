@@ -218,11 +218,25 @@
                 width:100vw;
                 margin: 1px;
             }
-            .TallBird{
+            .GreenElements{
                 position: relative;
-                text-align: center;
-                float: left;
-                width:21vw;
+                top:2%;
+                margin-bottom:0.2%;
+            }
+            #TallBird{
+                left: 50%;
+                transform: translateX(-50%);
+                width:14.92vw;
+            }
+            #SpeechBubble{
+                left:12%;
+                transform: translateX(-38%);
+                width:15vw;
+            }
+            #Goggles{
+                right:12%;
+                transform: translateX(38%);
+                width:13vw;
             }
             @media only screen and (max-width: 920px) {
                 #halftone {
@@ -278,7 +292,7 @@
         </div>
         <div class = "rectangle"></div>
         <h2 id = "Involvement">Involvement</h2>
-        <img id = "TallBird" src = "images/tallbird.png">
+        <img class = "GreenElements TallBird" src = "images/tallbird.png">
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
