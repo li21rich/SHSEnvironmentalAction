@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <!--i think we should make sure it works for mobile and computer displays of any size-->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
         <title>Environmental Action</title>
@@ -25,6 +24,22 @@
                 font-size: 100%;
                 margin: 0;
             }    
+            @media only screen and (max-width: 920px) {
+                #halftone {
+                    display: none;
+                }
+                .introduction{
+                    width: 100%;
+                }
+                .BannerButtons, .LeafOne, .LeafTwo, .LeafThree{
+                    display: none;
+                }
+            }
+            @media only screen and (min-width: 921px) {
+                .dropdown{
+                   display: none;
+                }
+            }
             #referencePoint{
                 position: absolute;
                 top: 0px;
@@ -269,22 +284,6 @@
             .gradient2{
             }
             .gradient3{
-            }
-            @media only screen and (max-width: 920px) {
-                #halftone {
-                    display: none;
-                }
-                .introduction{
-                    width: 100%;
-                }
-                .BannerButtons, .LeafOne, .LeafTwo, .LeafThree{
-                    display: none;
-                }
-            }
-            @media only screen and (min-width: 921px) {
-                .dropdown{
-                   display: none;
-                }
             }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
