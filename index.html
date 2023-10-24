@@ -253,6 +253,10 @@
                 width:20vw;
                 clear:both;
             }
+            .image-row {
+                display: flex;
+                justify-content: space-between;
+            }
             .TransparentBoxes{
                 background-color:rgba(120,120,120,0.2);
                 color: #fff;
@@ -266,13 +270,13 @@
                 display: inline-block;
             }
             .box1{
-                left:18%;
+                
             }
             .box2{
-                left:30%;
+                
             }
             .box3{
-                left:48%;
+                
             }
             .TransparencyGradients{
                 background: rgb(0,0,0);
@@ -350,18 +354,20 @@
         </div>
         <div class = "rectangle"></div>
         <h2 id = "Involvement">Involvement</h2>
-        <div class = "TransparentBoxes box1">
-            <div class = "TransparencyGradients gradient1"></div>
-        </div>
-        <div class = "TransparentBoxes box2">
-            <div class = "TransparencyGradients gradient2"></div>
-        </div>
-        <div class = "TransparentBoxes box3">
-            <div class = "TransparencyGradients gradient3"></div>
-        </div>
         <img class = "GreenElements TallBird" src = "images/tallbird.png">
         <img class = "GreenElements SpeechBubble" src = "images/SpeechBubble.PNG">
         <img class = "GreenElements Goggles" src = "images/tinygoggles.svg">
+        <div class="image-row">
+            <div class = "TransparentBoxes box1">
+                <div class = "TransparencyGradients gradient1"></div>
+            </div>
+            <div class = "TransparentBoxes box2">
+                <div class = "TransparencyGradients gradient2"></div>
+            </div>
+            <div class = "TransparentBoxes box3">
+                <div class = "TransparencyGradients gradient3"></div>
+            </div>
+        </div>
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
