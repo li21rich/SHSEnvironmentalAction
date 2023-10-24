@@ -342,7 +342,7 @@
             <a href="#campaigns" style="padding-left: 12%;">Campaign</a>
             <a href="#about" style="padding-left: 12%;">About Us</a>
         </div>
-        <a href="#" class="icon" onclick="dropdown()">
+        <a href="#" class="icon">
             <i class="fa fa-bars"></i>
         </a>
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
@@ -413,6 +413,13 @@
                     e.preventDefault();
                 }
             }, false);
+            document.querySelector(".icon").addEventListener('click', function(event) {
+                dropdown();
+                event.stopPropagation();
+            });
+            document.querySelector('.icon').addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
             function dropdown() {
                 var linksMenu = document.querySelector(".LinksMenu");
                 var icon = document.querySelector(".icon");
@@ -424,12 +431,11 @@
                     icon.style.backgroundColor = "black";
                 }
             }
-            $(document).on('click', function(event) {
-                var linksMenu = $('.LinksMenu');
-                var icon = $('.icon');
-                if (linksMenu.is(':visible') && !linksMenu.is(event.target) && !icon.is(event.target)) {
-                    linksMenu.hide();
-                    icon.css('background-color', 'transparent');
+            document.addEventListener('click', function(event) {
+                const linksMenu = document.querySelector('.LinksMenu');
+                if (linksMenu.style.display === 'block' && !event.target.closest('.icon')) {
+                    linksMenu.style.display = 'none';
+                    document.querySelector('.icon').style.backgroundColor = 'transparent';
                 }
             });
             $(window).resize(function() {
