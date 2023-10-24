@@ -25,19 +25,6 @@
                 font-size: 100%;
                 margin: 0;
             }    
-            @media only screen and (max-width: 920px) {
-                #halftone, .BannerButtons, .LeafOne, .LeafTwo, .LeafThre {
-                    display: none;
-                }
-                .introduction{
-                    width: 100%;
-                }
-            }
-            @media only screen and (min-width: 921px) {
-                .dropdown{
-                   display: none;
-                }
-            }
             #referencePoint{
                 position: absolute;
                 top: 0px;
@@ -299,6 +286,19 @@
             .gradient2{
             }
             .gradient3{
+            }
+            @media screen and (max-width: 920px) {
+                #halftone, .BannerButtons, .CustomLeaf{
+                    display: none;
+                }
+                .introduction{
+                    width: 100%;
+                }
+            }
+            @media screen and (min-width: 921px) {
+                .dropdown{
+                   display: none;
+                }
             }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
