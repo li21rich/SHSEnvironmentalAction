@@ -27,8 +27,6 @@
             }    
             #myLinks {
               display: none;
-            }
-            a {
               color: black;
               padding: 1%;
               text-decoration: none;
@@ -36,12 +34,14 @@
               display: block;
             }
             a.icon {
-              background: white;
+              color: black;
+              padding: 1%;
               display: block;
               position: absolute;
               font-size:1.7rem;
               right: 0;
               top: 0;
+              z-index:1;
             }
             .active {
               background-color: #FFF;
@@ -315,14 +315,14 @@
     <body style="background-color:White;">
         <img id = "TopBanner" src="images/TopBanner.png">
         <img id = "halftone" src="images/halftone.svg">
-      <div id="myLinks">
-        <a href="#articles">News</a>
-        <a href="#campaigns">Contact</a>
-        <a href="#about">About Us</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="dropdown()">
-        <i class="fa fa-bars"></i>
-      </a>
+        <div id="myLinks">
+            <a href="#articles">News</a>
+            <a href="#campaigns">Contact</a>
+            <a href="#about">About Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+            <i class="fa fa-bars"></i>
+        </a>
         <a href="https://li21rich.github.io/SHSEnvironmentalAction/">
             <div class="logoBox">
                 <img src="images/birdgreen.svg" alt="Environmental Action Club Logo">
