@@ -3,9 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
         <title>Environmental Action</title>
-        <meta charset="utf-8">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <meta charset="utf-8">'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Montserrat:400,700' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet
+        <link href="https://fonts.cdnfonts.com/css/gill-sans-mt-2" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             html {
@@ -39,7 +40,7 @@
                 top: 0;
                 z-index:3;
             }
-            a:-webkit-any-link:not(.icon) {
+            a:-webkit-any-link:not(.icon, .Involvements) {
                 color: inherit !important;
                 text-decoration: none !important;
                 display: inherit;
@@ -279,7 +280,7 @@
             .TransparentBoxes{
                 background-color:rgba(200,200,200,0.1);
                 color: #fff;
-                height: 40vh;
+                height: 38.5vh;
                 width: 21vw;
                 position: relative;
                 margin-top: 0.1%;
@@ -298,24 +299,37 @@
             .box3{
                 left:-11.7%;
             }
+            Involvements{
+                top:1vh;
+                height:74%;
+                width:16.9vw;
+                left:1vw;
+                position:absolute;
+                text-align:left;
+                z-index:3;
+                background-color: #f7fff6ff; 
+                font-family: 'Gill Sans MT', sans-serif;
+            }
             .TransparencyGradients{
                 background: rgb(0,0,0);
                 background: linear-gradient(0deg, rgba(0,0,0,0.21) 7%, rgba(0,0,0,0.14) 31%, rgba(255,255,255,0) 84%);
                 height:4vh;
-                width:17vw;
+                width:16.9vw;
                 position:absolute;
                 left:1vw;
                 text-align: center;
                 z-index: 4;
+                top: 70%;
             }
-            .gradient1{
-                top:70%;
-            }
-            .gradient2{
-                top:70%;
-            }
-            .gradient3{
-                top:70%;
+            .MiniFooter{
+                top:74%;
+                height:25vh;
+                width:16.9vw;
+                left:1vw;
+                position:absolute;
+                text-align:center;
+                z-index:4;
+                background-color: #3f5e31ff; 
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -403,13 +417,63 @@
         <img class = "GreenElements Goggles" src = "images/tinygoggles.svg">
         <div class="image-row">
             <div class = "TransparentBoxes box1">
-                <div class = "TransparencyGradients gradient1"></div>
+                <p class = "Involvements">
+                    Our Webinars
+                    <ul>
+                      <li>Experts are invited</li>
+                      <li>Occurs every semester</li>
+                    </ul>
+                    Monthly Workshops
+                    <ul>
+                      <li>Learn environmental advocacy</li>
+                    </ul>
+                    Regular Meetings
+                    <ul>
+                      <li>Tutorial updates held up to twice a week</li>
+                    </ul>
+                </p>
+                <div class = "TransparencyGradients"></div>
+                <div class = "MiniFooter"></div>
             </div>
             <div class = "TransparentBoxes box2">
-                <div class = "TransparencyGradients gradient2"></div>
+                <p class = "Involvements">
+                    Visit our <a href="https://linktr.ee/environmental_action_club">linktree</a>
+                    <ul>
+                      <li>Or <a href="https://forms.gle/LAVz8fkzZSBbcyMC8">sign up directly</a></li>
+                    </ul>
+                    Questions
+                    <ul>
+                      <li>
+                        Email us at:
+                        Saratoga.eac@gmail.com
+                      </li>
+                    </ul>
+                    Socials
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </p>
+                <div class = "TransparencyGradients"></div>
+                <div class = "MiniFooter"></div>
             </div>
             <div class = "TransparentBoxes box3">
-                <div class = "TransparencyGradients gradient3"></div>
+                <p class = "Involvements">
+                    Holiday Outings
+                    <ul>
+                      <li>Optional birdwatching and hiking</li>
+                    </ul>
+                    Fundraising
+                    <ul>
+                      <li>Website funding</li>
+                    </ul>
+                    Public Comments
+                    <ul>
+                      <li>Attend city council meetings</li>
+                    </ul>
+                </p>
+                <div class = "TransparencyGradients"></div>
+                <div class = "MiniFooter"></div>
             </div>
         </div>
         <button class="BannerButtons ArticlesButton">Articles
