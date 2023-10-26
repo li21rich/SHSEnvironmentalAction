@@ -354,29 +354,35 @@
                 background-color: #3f5e31ff; 
             }
             #CurrentInitiatives {
-                position:relative;
+                position:absolute;
+                top:1655px;
                 font-size: clamp(1.97rem, 3.8vw, 7.4rem);
                 font-family: Comfortaa;
                 left: 5%;
                 color:white;
             }
             #InProgress{
-                font-size: clamp(1.3rem, 3.2vw, 7rem);
+                font-size: clamp(1.2rem, 2.9vw, 7rem);
                 font-family:Montserrat;
                 position: relative;
                 float: left;
-                margin-left:2%;
-                margin-bottom:0.5%;
-                font-weight:400;
+                margin-top:9%;
+                margin-left:35%;
+                margin-bottom:-9%;
+                font-weight:bold;
+                display: inline-block;
             }
-            #Initiatives{
-                font-size: clamp(1rem, 2.8vw, 6.7rem);
+            #Initiatives {
+                font-size: clamp(1rem, 2.4vw, 6.7rem);
                 font-family:Montserrat;
                 position: relative;
                 float: left;
                 margin:0;
-                left:-15%;
-                top:15%;
+                margin-top:3px;
+                left:40%;
+                top:3%;
+                line-height:1.5;
+                display: inline-block;
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -386,6 +392,53 @@
                     flex-direction: row;
                 }
             }
+            @media screen and (max-width: 1040px) { 
+                .image-row{
+                    top: 0.05%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start !important;
+                }
+                .TransparentBoxes{
+                    width:80%;
+                    height: 213px;
+                    float:left;
+                    clear:both;
+                    margin-left: 10% !important;
+                    margin-bottom:45px;
+                    left:0;
+                }
+                .TransparencyGradients{
+                    display:none;
+                }
+                .MiniFooter{
+                    top:calc(73.8% + 14px);
+                    margin-right:23px;
+                    width: 100%;
+                    width: -moz-available;   
+                    width: -webkit-fill-available;  
+                    width: fill-available;
+                }
+                .Involvements{
+                    margin-right:23px;
+                    width: 100%;
+                    width: -moz-available;   
+                    width: -webkit-fill-available;  
+                    width: fill-available;
+                    left:20px;
+                    top:20px;
+                    height:73.8%;
+                }
+                .Involvements p {
+                    font-size: 15px;
+                }
+                .Involvements ul {
+                    font-size: 12px;
+                }
+                .Involvements p, .Involvements ul, .Involvements li {
+                    margin:8px !important;
+                }
+            }       
             @media screen and (max-width: 920px) { 
                 #halftone, .BannerButtons, .CustomLeaf {
                     display: none !important;
@@ -394,7 +447,7 @@
                     width: 97%;
                 }
                 .Mission{
-                    top: 1%;
+                    top: 1.7%;
                     padding: 0.4%;
                     line-height:1.1;
                     mragin-bottom:-4%;
@@ -402,9 +455,6 @@
                 .GreenElements, .Goggles{
                     top:0;
                     margin-bottom:0;
-                }
-                .image-row {
-                    top: 0.05%;
                 }
                 #EnvironmentalPhoto{
                     left: 2%;
@@ -414,50 +464,8 @@
                     clear: both;
                     border: 8px solid #000000;
                 }
-                .image-row{
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: flex-start !important;
-                }
                 .rectangle{
                     top: 20px;
-                }
-                .TransparentBoxes{
-                    width:80%;
-                    height: 190px;
-                    float:left;
-                    clear:both;
-                    margin-left: 10% !important;
-                    margin-bottom:8px;
-                    left:0;
-                }
-                .TransparencyGradients{
-                    display:none;
-                }
-                .MiniFooter{
-                    top:calc(73.8% + 14px);
-                    left:20px;
-                    width:80%;
-                }
-                .Involvements{
-                    width:80%;
-                    left:20px;
-                    top:20px;
-                    height:73.8%;
-                }
-                .Involvements p {
-                    font-size: 13px;
-                }
-                .Involvements ul {
-                    font-size: 10px;
-                }
-                .Involvements p, .Involvements ul, .Involvements li {
-                    margin:8px !important;
-                }
-                #CurrentInitiatives{
-                    left: 3%;
-                    color: black;
-                    clear:right;
                 }
             }
         </style>
@@ -582,7 +590,7 @@
         </div>
         <h2 id = "CurrentInitiatives">Current<br>Initiatives</h2>
         <h3 id = "InProgress">In Progress</h3>
-        <ul id ="Initatives">
+        <ul id ="Initiatives">
             <li>San Jose/Board of Supervisors artificial turf moratorium campaign</li>
             <li>SB676 passed floor vote 9/12/23</li>
             <li>AB1423 (PFAS Ban) passed floor vote 9/14/23</li>
