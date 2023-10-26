@@ -7,6 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Montserrat:400,700' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/gill-sans-mt-2" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             html {
@@ -207,14 +208,15 @@
                 width: 43%;
                 padding: 1%;
                 font-family: Montserrat;
-                font-size: clamp(1rem, 1.4vw, 4.5rem);
+                font-size: clamp(0.6rem, 1.4vw, 4.5rem);
                 line-height:1.37;
                 text-align: left;
                 margin-bottom: 10%;
+                z-index: 2;
             }
             .MissionStatement{
                 position: relative;
-                font-size: clamp(1.17rem, 1.9vw, 6.4rem);
+                font-size: clamp(0.9rem, 1.9vw, 6.4rem);
                 font-weight: 400;
                 text-align: center;
                 text-decoration: underline;
@@ -277,6 +279,7 @@
                 offset-anchor: right;
                 position: relative;
                 top: 2.6%;
+                clear: right;
             }
             .TransparentBoxes{
                 background-color:rgba(220,220,220,0.2);
@@ -350,6 +353,12 @@
                 z-index:5;
                 background-color: #3f5e31ff; 
             }
+            #CurrentInitiatives {
+                position:relative;
+                font-size: clamp(2.57rem, 3.8vw, 7.4rem);
+                font-family: Comfortaa;
+                left: 2%;
+            }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
                     display: none;
@@ -365,6 +374,26 @@
                 .introduction {
                     width: 97%;
                 }
+                .Mission{
+                    top: 0.1%;
+                    padding: 0.1%;
+                    line-height:1;
+                }
+                .GreenElements, .Goggles{
+                    top:0;
+                    margin-bottom:0;
+                }
+                .image-row {
+                    top: 0.05
+                }
+                #EnvironmentalPhoto{
+                    left: 2%;
+                    top: 5%;
+                    width: 32%;
+                    margin: 1%;
+                    clear: both;
+                    border: 8px solid #000000;
+                }
                 .image-row{
                     flex-direction: column;
                     justify-content: space-between;
@@ -375,18 +404,18 @@
                 }
                 .TransparentBoxes{
                     width:80%;
-                    height: 250px;
+                    height: 190px;
                     float:left;
                     clear:both;
                     margin-left: 10% !important;
                     margin-bottom:8px;
+                    left:0;
                 }
                 .TransparencyGradients{
                     display:none;
-                    left:0;
                 }
                 .MiniFooter{
-                    top:calc(73.8% + 20px);
+                    top:calc(73.8% + 14px);
                     left:20px;
                     width:80%;
                 }
@@ -430,6 +459,15 @@
             </div>
         </a>
         <img id = "referencePoint" src="images/CustomLeaf.png">
+        <button class="BannerButtons ArticlesButton">Articles
+        </button>
+        <button class="BannerButtons CampaignsButton">Campaigns
+        </button>
+        <button class="BannerButtons AboutUsButton">About Us
+        </button>
+        <img class = "CustomLeaf LeafOne"/>
+        <img class = "CustomLeaf LeafTwo"/>
+        <img class = "CustomLeaf LeafThree"/>
         <div class="introduction">
             <h2 class = "introTitle">Introduction</h2>
             <p>We are a passionate team of youth environmental activists, primarily from Saratoga High School. One of our focuses are environmentally impactful bills, such as SB499, AB1423, and SB676.</p>
@@ -517,15 +555,7 @@
                 <div class = "MiniFooter"></div>
             </div>
         </div>
-        <button class="BannerButtons ArticlesButton">Articles
-        </button>
-        <button class="BannerButtons CampaignsButton">Campaigns
-        </button>
-        <button class="BannerButtons AboutUsButton">About Us
-        </button>
-        <img class = "CustomLeaf LeafOne"/>
-        <img class = "CustomLeaf LeafTwo"/>
-        <img class = "CustomLeaf LeafThree"/>
+        <h2 id = "CurrentInitiatives">Current</ br>Initiatives</h2>
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
