@@ -244,7 +244,7 @@
             }
             #Involvement{
                 position: relative;
-                font-size: clamp(2.17rem, 2.9vw, 8.4rem);
+                font-size: clamp(1.67rem, 2.9vw, 8.4rem);
                 font-family: Montserrat;
                 font-weight: 400;
                 text-align: center;
@@ -355,9 +355,28 @@
             }
             #CurrentInitiatives {
                 position:relative;
-                font-size: clamp(2.57rem, 3.8vw, 7.4rem);
+                font-size: clamp(1.97rem, 3.8vw, 7.4rem);
                 font-family: Comfortaa;
-                left: 2%;
+                left: 5%;
+                color:white;
+            }
+            #InProgress{
+                font-size: clamp(1.3rem, 3.2vw, 7rem);
+                font-family:Montserrat;
+                position: relative;
+                float: left;
+                margin-left:2%;
+                margin-bottom:0.5%;
+                font-weight:400;
+            }
+            #Initiatives{
+                font-size: clamp(1rem, 2.8vw, 6.7rem);
+                font-family:Montserrat;
+                position: relative;
+                float: left;
+                margin:0;
+                left:-15%;
+                top:15%;
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -378,6 +397,7 @@
                     top: 1%;
                     padding: 0.4%;
                     line-height:1.1;
+                    mragin-bottom:-4%;
                 }
                 .GreenElements, .Goggles{
                     top:0;
@@ -433,6 +453,11 @@
                 }
                 .Involvements p, .Involvements ul, .Involvements li {
                     margin:8px !important;
+                }
+                #CurrentInitiatives{
+                    left: 3%;
+                    color: black;
+                    clear:right;
                 }
             }
         </style>
@@ -555,7 +580,14 @@
                 <div class = "MiniFooter"></div>
             </div>
         </div>
-        <h2 id = "CurrentInitiatives">Current</ br>Initiatives</h2>
+        <h2 id = "CurrentInitiatives">Current<br>Initiatives</h2>
+        <h3 id = "InProgress">In Progress</h3>
+        <ul id ="Initatives">
+            <li>San Jose/Board of Supervisors artificial turf moratorium campaign</li>
+            <li>SB676 passed floor vote 9/12/23</li>
+            <li>AB1423 (PFAS Ban) passed floor vote 9/14/23</li>
+            <li>SB499 (Heat Mitigation) and AB38 (Night Sky)</li>
+        </ul>
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
