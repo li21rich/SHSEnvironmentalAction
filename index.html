@@ -27,6 +27,10 @@
                 font-size: 100%;
                 margin: 0;
             }    
+            mark {
+              background-color: #f7fff6ff;
+              color: inherit;
+            }
             .icon {
                 color: #F5F5EF !important;
                 background-color: transparent;
@@ -313,7 +317,7 @@
                 background-color: #f7fff6ff; 
                 font-family: 'Gill Sans MT', sans-serif;
                 color: black;
-                line-height:0.89;
+                line-height:1.4;
                 text-wrap: pretty;
             }
             .Involvements p a, .Involvements ul a {
@@ -325,10 +329,10 @@
                 padding-left: 3px;
             }
             .Involvements p {
-                font-size: 18px;
+                font-size: 33px;
             }
             .Involvements ul {
-                font-size: 15px;
+                font-size: 26px;
             }
             .TransparencyGradients{
                 background: rgb(0,0,0);
@@ -393,6 +397,17 @@
                     flex-direction: row;
                 }
             }
+            @media screen and (max-width: 2000px) { 
+                .Involvements p {
+                    font-size: 29px;
+                }
+                .Involvements ul {
+                    font-size: 19px;
+                }
+                .Involvements{
+                    line-height:1;
+                }
+            }
             @media screen and (max-width: 1148px) { 
                 .image-row{
                     top: 0.05%;
@@ -429,6 +444,13 @@
                     left:20px;
                     top:20px;
                     height:73.8%;
+                    line-height:0.89;
+                }
+                .Involvements p {
+                    font-size: 18px;
+                }
+                .Involvements ul {
+                    font-size: 15px;
                 }
                 .rectangle{
                     margin-top:60px;
@@ -566,7 +588,7 @@
                     <ul>
                       <li>
                         Email us at:
-                        saratoga.eac@gmail.com
+                        <mark>saratoga.eac@gmail.com</mark>
                       </li>
                     </ul>
                     <p>Socials</p>
