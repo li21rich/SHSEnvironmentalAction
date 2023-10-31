@@ -400,12 +400,13 @@
                 line-height: 1.9;
             }
             #CallToAction i {
-                font-style: underline !important;
+                font-style: inherit !important;
                 font-size: clamp(1rem, 2.24vw, 6.9rem);
             }
             #CallToAction a i {
                 color: #bcff9d !important;
                 font-weight: bold;
+                text-decoration:underline;
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -650,7 +651,7 @@
             <li>AB1423 (PFAS Ban) passed floor vote 9/14/23</li>
             <li>SB499 (Heat Mitigation) and AB38 (Night Sky)</li>
         </ul>
-        <p id = "CallToAction">For sign-ups, petitions, articles, and more:<br><i>Find us here</i></p>
+        <p id = "CallToAction">For signing up, petitions, articles, and more:<br><i>Join us <a href = "https://linktr.ee/environmental_action_club">here</a></i></p>
 </p>
         <script>
             <!--JQuery imported because convenient-->
@@ -697,6 +698,23 @@
                     $('.LinksMenu').hide();
                     $('.icon').css('background-color', 'transparent');
                 }
+            });
+            $(document).ready(function() {
+              function adjustPosition() {
+                $('#CallToAction').position({
+                  my: 'top',
+                  at: 'bottom',
+                  of: '#Initiatives',
+                  offset: '100 0'
+                });
+              }
+            
+              // Initial positioning
+              adjustPosition();
+            
+              // Adjust on window resize
+              $(window).resize(adjustPosition);
+            });
             });
         </script>
     </body>
