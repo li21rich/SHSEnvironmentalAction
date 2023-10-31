@@ -391,24 +391,33 @@
             }
             #CallToAction{
                 position: absolute;
-                top: 280vw;
+                top: 183vw;
                 left: 50%;
                 transform: translateX(-50%);
                 color: white;
                 font-family:Montserrat;
-                font-size: clamp(0.81rem, 1.71vw, 6.6rem);
+                font-size: clamp(0.83rem, 1.73vw, 6.6rem);
                 display: inline-block;
                 text-align: center;
-                line-height: 1.9;
+                line-height: 2.8;
             }
             #CallToAction i {
                 font-style: inherit !important;
-                font-size: clamp(1rem, 2.24vw, 6.9rem);
+                font-size: clamp(1.1rem, 2.26vw, 6.9rem);
             }
             #CallToAction a i {
                 color: #bcff9d !important;
                 font-weight: bold;
                 text-decoration:underline;
+            }
+            #horizline{
+                position:absolute;
+                top:184vw;
+                height:2px;
+                border-width:0;
+                background-color:white;
+                width:40%;
+                text-align:center;
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -486,6 +495,12 @@
                 }
                 #Initiatives{
                     top:1800px
+                }
+                #CallToAction{
+                    top:1850px;
+                }
+                #horizline{
+                    top:1900px;
                 }
             }       
             @media screen and (max-width: 920px) { 
@@ -654,7 +669,7 @@
             <li>SB499 (Heat Mitigation) and AB38 (Night Sky)</li>
         </ul>
         <p id = "CallToAction">For signing up, petitions, articles, and more:<br><i>Join us <a href = "https://linktr.ee/environmental_action_club">here</a></i></p>
-</p>
+        <hr id = "horizline">
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
