@@ -28,7 +28,7 @@
                 margin: 0;
             }    
             mark {
-              background-color: #f7fff6ff;
+              background-color: transparent;
               color: inherit;
             }
             .icon {
@@ -479,13 +479,14 @@
                     width: fill-available;
                 }
                 .Involvements{
-                    margin-right:23px;
                     width: 100%;
                     width: -moz-available;   
                     width: -webkit-fill-available;  
                     width: fill-available;
                     left:10px;
                     top:10px;
+                    margin-right:10px;
+                    margin-bottom:10px;
                     height:73.8%;
                     line-height:0.89;
                 }
@@ -512,10 +513,10 @@
                 .CallToAction{
                     top:2128px;
                     font-size:23px;
+                    width:100vw;
                 }
                 .CallToAction i {
                     font-size:26px;
-                    width:100vw;
                 }
                 #horizline{
                     top:2205px;
@@ -556,6 +557,22 @@
                 #Initiatives{
                     left:9%;
                     top:1840px;
+                }
+            }
+            @media screen and (max-width: 501px) { 
+                .CallToAction{
+                    font-size:19px
+                }
+            }
+            @media screen and (max-width: 376px){
+                .Involvements{
+                    line-height:0.8;
+                }
+                .Involvements p {
+                    font-size: 15px;
+                }
+                .Involvements ul {
+                    font-size: 13px;
                 }
             }
         </style>
