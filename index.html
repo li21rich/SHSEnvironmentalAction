@@ -530,6 +530,12 @@
                 .ArrowOnLeft, .ArrowOnRight{
                     top: 2167px !important;
                 }
+                .ArrowOnRight{
+                    left: calc(50% - 300px);
+                }
+                .ArrowOnLeft{
+                    left: calc(50% + 300px);
+                }
                 #horizline{
                     top:2205px;
                 }
@@ -764,25 +770,6 @@
                     $('.LinksMenu').hide();
                     $('.icon').css('background-color', 'transparent');
                 }
-            });
-            $(document).ready(function() {
-                const arrowLeft = $('.ArrowOnLeft');
-                const arrowRight = $('.ArrowOnRight');
-                const callToAction = $('.CallToAction');
-            
-                const adjustArrows = () => {
-                    const callToActionWidth = callToAction.width();
-                    const arrowWidth = arrowLeft.width();
-            
-                    arrowLeft.css('left', `calc(50% - ${callToActionWidth / 2 + arrowWidth}px)`);
-                    arrowRight.css('right', `calc(50% - ${callToActionWidth / 2 + arrowWidth}px)`);
-                };
-            
-                // Initial adjustment on load
-                adjustArrows();
-            
-                // Adjust on window resize
-                $(window).resize(adjustArrows);
             });
         </script>
     </body>
