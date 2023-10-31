@@ -414,16 +414,11 @@
             .ArrowOnLeft, .ArrowOnRight{
                 position:absolute;
                 width:3.9vw !important;
-                top: 2167px !important;
                 z-index: 1;
             }
             .ArrowOnLeft{
                 -webkit-transform: scaleX(-1);
                 transform: scaleX(-1);
-                left: 21%;
-            }
-            .ArrowOnRight{
-                left:77%;
             }
             #horizline{
                     position: absolute;
@@ -531,6 +526,9 @@
                 }
                 .CallToAction i {
                     font-size:26px;
+                }
+                .ArrowOnLeft, .ArrowOnRight{
+                    top: 2167px !important;
                 }
                 #horizline{
                     top:2205px;
@@ -766,6 +764,18 @@
                     $('.LinksMenu').hide();
                     $('.icon').css('background-color', 'transparent');
                 }
+            });
+            $(document).ready(function() {
+                const arrowLeft = $('.ArrowOnLeft');
+                const arrowRight = $('.ArrowOnRight');
+                const callToAction = $('.CallToAction');
+                const adjustArrows = () => {
+                    const callToActionWidth = callToAction.width();
+                    arrowLeft.css('left', `-${arrowLeft.width()}px`);
+                    arrowRight.css('right', `-${arrowRight.width()}px`);
+                };
+                adjustArrows();
+                $(window).resize(adjustArrows);
             });
         </script>
     </body>
