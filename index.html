@@ -45,7 +45,7 @@
                 top: 0;
                 z-index:3;
             }
-            a:-webkit-any-link:not(.icon):not(.Involvements):not(#CallToAction) {
+            a:-webkit-any-link:not(.icon):not(.Involvements):not(.CallToAction) {
                 color: inherit;
                 text-decoration: none;
                 display: inherit;
@@ -389,35 +389,36 @@
                 display: inline-block;
                 z-index: 3;
             }
-            #CallToAction{
+            .CallToAction{
                 position: absolute;
-                top: 183vw;
+                top: 182vw;
                 left: 50%;
                 transform: translateX(-50%);
                 color: white;
                 font-family:Montserrat;
-                font-size: clamp(0.83rem, 1.73vw, 6.6rem);
+                font-size: clamp(1rem, 2vw, 6.6rem);
                 display: inline-block;
                 text-align: center;
                 line-height: 2.8;
             }
-            #CallToAction i {
+            .CallToAction i {
                 font-style: inherit !important;
                 font-size: clamp(1.1rem, 2.26vw, 6.9rem);
             }
-            #CallToAction a i {
+            .CallToAction a i {
                 color: #bcff9d !important;
                 font-weight: bold;
                 text-decoration:underline;
             }
             #horizline{
-                position:absolute;
-                top:184vw;
-                height:2px;
-                border-width:0;
-                background-color:white;
-                width:40%;
-                text-align:center;
+                    position: absolute;
+                    top: 189.1vw;
+                    height: 2px;
+                    border-width: 0;
+                    background-color: white;
+                    width: 28%;
+                    left: 36%;
+                    text-align: center;
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -438,7 +439,7 @@
                     line-height:1;
                 }
             }
-            @media screen and (max-width: 1148px) { 
+            @media screen and (max-width: 1152px) { 
                 .image-row{
                     top: 0.05%;
                     flex-direction: column;
@@ -496,11 +497,11 @@
                 #Initiatives{
                     top:1800px
                 }
-                #CallToAction{
-                    top:1850px;
+                .CallToAction{
+                    top:2128px
                 }
                 #horizline{
-                    top:1900px;
+                    top:2205px;
                 }
             }       
             @media screen and (max-width: 920px) { 
@@ -668,7 +669,7 @@
             <li>AB1423 (PFAS Ban) passed floor vote 9/14/23</li>
             <li>SB499 (Heat Mitigation) and AB38 (Night Sky)</li>
         </ul>
-        <p id = "CallToAction">For signing up, petitions, articles, and more:<br><i>Join us <a href = "https://linktr.ee/environmental_action_club">here</a></i></p>
+        <p class = "CallToAction">For signing up, petitions, articles, and more:<br><i>Join us <a href = "https://linktr.ee/environmental_action_club">here</a></i></p>
         <hr id = "horizline">
         <script>
             <!--JQuery imported because convenient-->
