@@ -390,8 +390,10 @@
                 z-index: 3;
             }
             #CallToAction{
-                position:relative;
-                top: 60px;
+                position: absolute;
+                top: 280vw;
+                left: 50%;
+                transform: translateX(-50%);
                 color: white;
                 font-family:Montserrat;
                 font-size: clamp(0.81rem, 1.71vw, 6.6rem);
@@ -698,23 +700,6 @@
                     $('.LinksMenu').hide();
                     $('.icon').css('background-color', 'transparent');
                 }
-            });
-            $(document).ready(function() {
-              function adjustPosition() {
-                $('#CallToAction').position({
-                  my: 'top',
-                  at: 'bottom',
-                  of: '#Initiatives',
-                  offset: '100 0'
-                });
-              }
-            
-              // Initial positioning
-              adjustPosition();
-            
-              // Adjust on window resize
-              $(window).resize(adjustPosition);
-            });
             });
         </script>
     </body>
