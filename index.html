@@ -769,12 +769,19 @@
                 const arrowLeft = $('.ArrowOnLeft');
                 const arrowRight = $('.ArrowOnRight');
                 const callToAction = $('.CallToAction');
+            
                 const adjustArrows = () => {
                     const callToActionWidth = callToAction.width();
-                    arrowLeft.css('left', `-${arrowLeft.width()}px`);
-                    arrowRight.css('right', `-${arrowRight.width()}px`);
+                    const arrowWidth = arrowLeft.width();
+            
+                    arrowLeft.css('left', `calc(50% - ${callToActionWidth / 2 + arrowWidth}px)`);
+                    arrowRight.css('right', `calc(50% - ${callToActionWidth / 2 + arrowWidth}px)`);
                 };
+            
+                // Initial adjustment on load
                 adjustArrows();
+            
+                // Adjust on window resize
                 $(window).resize(adjustArrows);
             });
         </script>
