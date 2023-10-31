@@ -410,6 +410,18 @@
                 font-weight: bold;
                 text-decoration:underline;
             }
+            .CallToAction ArrowOnLeft{
+                position:relative;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                right:30%;
+                width:6vw;
+            }
+            .CallToAction ArrowOnRight{
+                position:relative;
+                left:30%;
+                width:6vw;
+            }
             #horizline{
                     position: absolute;
                     top: 189.1vw;
@@ -671,6 +683,8 @@
         </ul>
         <p class = "CallToAction">For signing up, petitions, articles, and more:<br><i>Join us <a href = "https://linktr.ee/environmental_action_club">here</a></i></p>
         <hr id = "horizline">
+        <img class = "CallToAction ArrowOnLeft" src="images/LeftArrow.png">
+        <img class = "CallToAction ArrowOnRight" src="images/LeftArrow.png">
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
