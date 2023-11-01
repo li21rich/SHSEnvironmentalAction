@@ -11,10 +11,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             html {
-                overflow-x: hidden;
+                overflow-x: hidden !important;
             }
             body {
-                overflow-x: hidden;
+                overflow-x: hidden !important;
                 background-image: url("images/wiped.svg");
                 background-position: center top;
                 height: 222.280334728vw;
@@ -666,7 +666,10 @@
             }
             @media screen and (max-width: 690px) { 
                 .ArrowOnLeft, .ArrowOnRight{
-                    display: none;
+                    visibility: hidden;
+                }
+                .InstaLogo, .FaceLogo{
+                    visibility: visible !important;
                 }
             }
             @media screen and (max-width: 501px) { 
