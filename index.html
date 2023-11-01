@@ -388,6 +388,12 @@
                 display: inline-block;
                 z-index: 3;
             }
+            #copyright {
+                position: absolute;
+                bottom:10px;
+                text-align:center;
+                left:39.72%;
+            }  
             .CallToAction{
                 position: absolute;
                 top: 182vw;
@@ -426,7 +432,7 @@
             .ArrowOnRight{
                 left: 76%;
             }
-            #horizline, #LeftLine, #RightLine{
+            #horizline, .LeftLine, .RightLine{
                     position: absolute;
                     top: 189.1vw;
                     height: 2px;
@@ -457,22 +463,25 @@
                 left:52%;
                 text-align: left;
             }
-            #LeftLine, #RightLine{
+            .LeftLine, .RightLine{
                 top: 210.5vw;
                 background-color:#4f6346;
                 width: 22%;
             }
-            #LeftLine{
+            .LeftLine{
                 left:20%;
             }
-            #RightLine{
+            .RightLine{
                 right:20%;
             }
-            
-            #copyright{
-                position: absolute;
-                bottom:10px;
-                text-align:center;
+            .InstaLogo, .FaceLogo{
+                width:2vw;
+            }
+            .InstaLogo{
+                left:35%;
+            }
+            .FaceLogo{
+                right:35%;
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -588,7 +597,7 @@
                     top:2343px;
                     font-size:1.4vw;
                 }
-                #LeftLine, #RightLine{
+                .LeftLine, .RightLine{
                     top:2518px;
                 }
             }       
@@ -694,7 +703,7 @@
             <p>
                 <a>About us</a> 
                 <p><br></p>
-                <a href= "https://linktr.ee/environmental_action_club">Sign up & other<br><br><br>Important Links</a>
+                <a href= "https://linktr.ee/environmental_action_club">Sign up & other<br><br><br><br><br><br><br><br>Important Links</a>
             </p>
         </div>
         <div class="Footer2">
@@ -806,9 +815,10 @@
         <hr id = "horizline">
         <img class = "CallToAction ArrowOnLeft" src="images/LeftArrow.png">
         <img class = "CallToAction ArrowOnRight" src="images/LeftArrow.png">
-        <hr id = "RightLine">
-        <hr id = "LeftLine">
-
+        <hr class = "RightLine">
+        <hr class = "LeftLine">
+        <img class = "LeftLine FaceLogo" src="images/FaceLogo.png">
+        <img class = "RightLine InstaLogo" src="images/InstaLogo.png">
         <p id = "copyright">© 2023 Environmental Action Club All rights reserved.</p>
         <script>
             <!--JQuery imported because convenient-->
