@@ -458,14 +458,21 @@
                 text-align: left;
             }
             #LeftLine, #RightLine{
-                top: 200vw;
+                top: 210.5vw;
                 background-color:#4f6346;
+                width: 22%;
             }
             #LeftLine{
-                left:30%;
+                left:20%;
             }
             #RightLine{
-                right:30%;
+                right:20%;
+            }
+            
+            #copyright{
+                position: absolute;
+                bottom:10px;
+                text-align:center;
             }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
@@ -582,7 +589,7 @@
                     font-size:1.4vw;
                 }
                 #LeftLine, #RightLine{
-                    top:2355px;
+                    top:2518px;
                 }
             }       
             @media screen and (max-width: 920px) { 
@@ -687,7 +694,7 @@
             <p>
                 <a>About us</a> 
                 <p><br></p>
-                <a href= "https://linktr.ee/environmental_action_club">Sign up & other<br>Important Links</a>
+                <a href= "https://linktr.ee/environmental_action_club">Sign up & other<br><br><br>Important Links</a>
             </p>
         </div>
         <div class="Footer2">
@@ -801,6 +808,8 @@
         <img class = "CallToAction ArrowOnRight" src="images/LeftArrow.png">
         <hr id = "RightLine">
         <hr id = "LeftLine">
+
+        <p id = "copyright">© 2023 Environmental Action Club All rights reserved.</p>
         <script>
             <!--JQuery imported because convenient-->
             $(document).ready(function(){
