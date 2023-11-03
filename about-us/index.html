@@ -257,6 +257,38 @@
                 right:0;
                 width:11.5vw;
             }
+            .gallery {
+                padding-bottom:5vw;
+                width: 90vw;
+                padding-left:5vw;
+            }
+            .name {
+                position:absolute;
+                padding: .5vw;
+                margin-left: 2.1vw;
+                margin-top:1vw;
+                font-size:2.8vw;
+                display:inline-block;
+                font-weight: bold;
+                border: 2px solid #000;
+            }
+            .gallery img {
+                width: 40%;
+                height: auto;
+                border: 5px solid #000;
+                opacity:1;
+            }
+            .gallery:hover {
+                opacity:0.8;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
             @media screen and (min-width: 921px) {
                 .LinksMenu, .icon {
                     display: none;
@@ -359,6 +391,19 @@
         <img class = "CustomLeaf LeafOne"/>
         <img class = "CustomLeaf LeafTwo"/>
         <img class = "CustomLeaf LeafThree"/>
+        <div class="gallery">
+            <a target="_blank" href="/SHSEnvironmentalAction/images/CustomLeaf.png">
+                <img src="/SHSEnvironmentalAction/images/CustomLeaf.png">
+            </a>
+            <p class="name">President: Nicole Lee</p>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/SHSEnvironmentalAction/images/CustomLeaf.png">
+                <img src="/SHSEnvironmentalAction/images/CustomLeaf.png"> 
+            </a>
+            <p class="name">Vice President: Neha Tadikonda</p>
+        </div>
+        <div class="clearfix"></div>
         <div class="Footer">
             <h3>About</h3>
             <p>
