@@ -55,12 +55,6 @@
           max-width: 100%;
           max-height: 100%;
       }
-      #joke{
-        position: absolute;
-        font-size: clamp(19px, 1.5vw, 8.7vw);  
-        left: 52vw;
-        top:41.5vw;
-      }
       #bird{
         position:relative;
         width: 39vw;
@@ -99,6 +93,12 @@
       p a{
         font-weight: 700;   
       }
+      #joke{
+        position: absolute;
+        font-size: clamp(19px, 1.5vw, 8.7vw);  
+        left: 52vw;
+        top:41.5vw;
+      }
       @media screen and (max-width: 1120px) {
         #joke{
           top:45.5vw;
@@ -131,8 +131,9 @@
           width:100vw;
         }
         #bird{
+          width:77vw;
           position:relative;
-          margin:0;
+          margin: -250px 0px -150px; 
           display:block;
           clear:left;
           width:90vw;
