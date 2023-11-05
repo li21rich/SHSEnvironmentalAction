@@ -92,6 +92,12 @@
       p a{
         font-weight: 700;   
       }
+      #joke{
+        position: absolute;
+        font-size: clamp(19px, 2.23vw, 8.7vw);  
+        left: 25vw;
+        top:10vw;
+      }
       @media screen and (max-width: 690px) {
         #bird{
           display:block;
@@ -115,6 +121,7 @@
     <h1><span style="font-weight: bold">Whoops!</span> 404 Error.</h1>
     <p>The page you're migrating to doesn't exist at <span id="domain" style = "font-size: clamp(15px, 2vw, 8.7vw);"></span> <a href = "https://li21rich.github.io/SHSEnvironmentalAction/" style = "line-height:0.8;"><br><br>Return to home page.</a></p>
     <img id = "bird" src="/SHSEnvironmentalAction/images/404vectorized2.svg">
+    <p id = "joke"><i>Our glass still needs to be bird frit</i></p>
     <script>
         document.getElementById("domain").innerHTML = window.location.href.replace(/(^\w+:|^)\/\//, '');
     </script>
