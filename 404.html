@@ -62,7 +62,6 @@
         margin-top:4.2vw;
       }
       h1, p {    
-        color: green;      
         overflow-x: hidden;
         word-wrap: break-word;
         white-space: -moz-pre-wrap;
@@ -73,6 +72,7 @@
         float:left;
       }
       h1{
+        color: forestgreen;      
         position:absolute;
         font-size: clamp(31px, 3.5vw, 9.5vw);  
         padding:2px;
@@ -112,7 +112,7 @@
     <p>The page you're migrating to doesn't exist at <span id="domain" style = "font-size: clamp(15px, 2vw, 8.7vw);"></span>. <a href = https://li21rich.github.io/SHSEnvironmentalAction/><br><br>Return to home page.</a></p>
     <img id = "bird" src="/SHSEnvironmentalAction/images/BirdFell3.svg">
     <script>
-        document.getElementById("domain").innerHTML = window.location.href.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('.')[0];
+        document.getElementById("domain").innerHTML = window.location.href.replace(/(^\w+:|^)\/\//, '');
     </script>
   </body>
 </html>
