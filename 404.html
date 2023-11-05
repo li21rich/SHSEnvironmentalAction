@@ -5,8 +5,12 @@
 h1 {    
   color: green;    
   font-weight: 900;   
-  font-size: 3.5vw;    
+  font-size: clamp(28px, 3.5vw, 9vw);  
   font-family: Arial, sans-serif;   
+  overflow-x: hidden;
+  word-wrap: break-word;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
  }
 </style>
 </head>
