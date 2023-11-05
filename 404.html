@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-h1 {    
-  color: green;    
-  font-weight: 900;   
-  font-size: clamp(28px, 3.5vw, 9vw);  
-  font-family: Arial, sans-serif;   
-  overflow-x: hidden;
-  word-wrap: break-word;
-  white-space: -moz-pre-wrap;
-  white-space: pre-wrap;
- }
-</style>
-</head>
-  
-<body>
-<img src="/SHSEnvironmentalAction/roundbg.png">
-<h1>Whoops! This webpage doesn't exist. Return to home: https://li21rich.github.io/SHSEnvironmentalAction/</h1>
-</body>
+  <head>
+    <style>
+      h1, p {    
+        color: green;     
+        font-size: clamp(37px, 4vw, 9.5vw);  
+        font-family: Arial, sans-serif;   
+        overflow-x: hidden;
+        word-wrap: break-word;
+        white-space: -moz-pre-wrap;
+        white-space: pre-wrap;
+        font-weight: 900;   
+      }
+      p{
+        font-size: clamp(25px, 3.25vw, 9vw);  
+      }
+      p a{
+        font-weight: 900;   
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/SHSEnvironmentalAction/images/BirdFell.svg">
+    <h1>Whoops! 404 Error.<h1>
+    <p>The page you're migrating to doesn't exist at <span id="domain"></span>. <a href = https://li21rich.github.io/SHSEnvironmentalAction/>Return to home page.</a></p>
+      
+    <script>
+        document.getElementById("domain").domain = window.location.hostname;
+    </script>
+  </body>
 </html>
