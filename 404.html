@@ -55,13 +55,23 @@
         float:left;
       }
       h1{
+        position:absolute;
         font-size: clamp(31px, 3.5vw, 9.5vw);  
         padding:2px;
         margin:0;
         font-family: Montserrat;
       }
-      h1, p {    
+      p {
         position:relative;
+        display:inline-block;
+        font-size: clamp(23px, 2.7vw, 9vw);  
+        padding:2px;
+        margin:0;
+        margin-left:2vw;
+        margin-top:4.5vw;
+        font-family: Roboto;
+      }
+      h1, p {    
         color: green;     
         font-family: Arial, sans-serif;   
         overflow-x: hidden;
@@ -70,17 +80,9 @@
         white-space: pre-wrap;
         left: 9%;
         width:38vw;
-        display:inline-block;
         margin-top:.9vw;
-        margin-left:2vw;
         margin-right:1vw;
         float:left;
-      }
-      p {
-        font-size: clamp(23px, 2.7vw, 9vw);  
-        padding:2px;
-        margin:0;
-        font-family: Roboto;
       }
       p a{
         font-weight: 900;   
