@@ -46,7 +46,7 @@
       }
       #bird{
         position:relative;
-        width: 40vw;
+        width: 39vw;
         float:left;
       }
       h1{
@@ -66,10 +66,12 @@
         width:38vw;
         display:inline-block;
         margin-top:.9vw;
+        margin-left:2vw;
+        margin-right:1vw;
         float:left;
       }
       p {
-        font-size: clamp(23px, 2.78vw, 9vw);  
+        font-size: clamp(23px, 2.7vw, 9vw);  
         padding:2px;
         margin:0;
       }
@@ -88,10 +90,9 @@
             <img src="images/BrandText3.svg" alt="Environmental Action Club Logo">
         </div>
     </a>
-    <img id = "bird" src="/SHSEnvironmentalAction/images/BirdFell3.svg">
     <h1><span style="font-weight: bold">Whoops!</span> 404 Error.</h1>
     <p>The page you're migrating to doesn't exist at <span id="domain"></span>. <a href = https://li21rich.github.io/SHSEnvironmentalAction/><br>Return to home page.</a></p>
-      
+    <img id = "bird" src="/SHSEnvironmentalAction/images/BirdFell3.svg">
     <script>
         document.getElementById("domain").innerHTML = window.location.href;
     </script>
