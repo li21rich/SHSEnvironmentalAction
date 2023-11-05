@@ -50,7 +50,7 @@
         left: 33%;
       }
       h1{
-        font-size: clamp(37px, 3.8vw, 9.5vw);  
+        font-size: clamp(31px, 3.7vw, 9.5vw);  
         padding:2px;
         margin:0;
       }
@@ -63,9 +63,12 @@
         white-space: -moz-pre-wrap;
         white-space: pre-wrap;
         font-weight: 900;   
+        left: 14%;
+        margin-top:.9vw;
       }
       p {
-        font-size: clamp(25px, 3.35vw, 9vw);  
+        font-size: clamp(25px, 3vw, 9vw);  
+        font-weight: 400;
         padding:2px;
         margin:0;
       }
@@ -89,7 +92,7 @@
     <p>The page you're migrating to doesn't exist at <span id="domain"></span>. <a href = https://li21rich.github.io/SHSEnvironmentalAction/><br>Return to home page.</a></p>
       
     <script>
-        document.getElementById("domain").innerHTML = window.location.hostname;
+        document.getElementById("domain").innerHTML = window.location.href;
     </script>
   </body>
 </html>
