@@ -2,6 +2,15 @@
 <html>
   <head>
     <style>
+      #bird{
+        width: 20vw;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      h1{
+        padding:2px;
+        margin:0;
+      }
       h1, p {    
         color: green;     
         font-size: clamp(37px, 4vw, 9.5vw);  
@@ -11,9 +20,13 @@
         white-space: -moz-pre-wrap;
         white-space: pre-wrap;
         font-weight: 900;   
+        left: 50%;
+        transform: translateX(-50%);
       }
-      p{
-        font-size: clamp(25px, 3.25vw, 9vw);  
+      p {
+        font-size: clamp(25px, 3.55vw, 9vw);  
+        padding:2px;
+        margin:0;
       }
       p a{
         font-weight: 900;   
@@ -21,7 +34,7 @@
     </style>
   </head>
   <body>
-    <img src="/SHSEnvironmentalAction/images/BirdFell.svg">
+    <img id = "bird" src="/SHSEnvironmentalAction/images/BirdFell.svg">
     <h1>Whoops! 404 Error.<h1>
     <p>The page you're migrating to doesn't exist at <span id="domain"></span>. <a href = https://li21rich.github.io/SHSEnvironmentalAction/>Return to home page.</a></p>
       
