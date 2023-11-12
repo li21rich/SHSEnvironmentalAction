@@ -330,7 +330,7 @@
             .gallery img {
                 width: 23.5vw;
                 height: 23.5vw;
-                border: 5px solid #000;
+                border: 5px solid #595959;
                 opacity:1;
                 object-fit: cover;
             }
@@ -425,14 +425,34 @@
                 .leaves{
                     display: none;
                 }
+                .gallery{
+                    padding-top:60px;
+                    
+                }
                 .gallery img{
                     width:155px;
+                    height: auto;
                 }
                 .desc{
                     position:relative;
+                    left:0;
+                    left:160px;
+                    text-align:left;
+                    float:none;
+                    display:inline;
+                    font-size:1rem;
                 }
                 .name{
-                    margin-top:3vw;
+                    position:absolute;
+                    top:51px;
+                    margin:0;
+                    left:10px;
+                }
+                .grade{
+                    position: absolute;
+                    right:0;
+                    left:auto;
+                    top:34px;
                 }
             }
             @media screen and (max-width: 920px) { 
