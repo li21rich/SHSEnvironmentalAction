@@ -392,7 +392,7 @@
                     left:50.8vw;
                 }
                 #FooterLogo{
-                    top: 2592px;
+                    top: 2572px;
                     left:25px;
                     width:80px;
                 }
@@ -400,16 +400,23 @@
                     top:2476px;
                     width:150px;
                 }
+                #Header{
+                    font-size:3.4rem;
+                    top:0;
+                }
                 #Mentors{
                     position:absolute;
-                    top:2140px;
+                    top:2144px;
                     font-size:2rem;
                     left:50%;
+                    transform: translateX(-50%);
+                    margin:0;
                 }
                 #MentorList{
                     position:absolute;
                     font-size:1.3rem;
                     left:50%;
+                    transform: translateX(-50%);
                     line-height:1.48;
                     top:2160px;
                 }
@@ -417,6 +424,15 @@
             @media screen and (max-width: 1100px) { 
                 .leaves{
                     display: none;
+                }
+                .gallery img{
+                    width:155px;
+                }
+                .desc{
+                    position:relative;
+                }
+                .name{
+                    margin-top:3vw;
                 }
             }
             @media screen and (max-width: 920px) { 
@@ -435,9 +451,19 @@
                     display: none;
                 }
             }
+            @media screen and (max-width: 544px) {
+                #MentorList{
+                    top:2200px;
+                    line-height:1.46;
+                }
+            }
             @media screen and (max-width: 501px) { 
                 #FooterLogo{
                     width:60px;
+                }
+                #Header{
+                    font-size:3.15rem;
+                    top:-5vw;
                 }
             }
             @media screen and (max-width: 376px){
