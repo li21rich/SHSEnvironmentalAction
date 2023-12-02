@@ -240,6 +240,20 @@
                 color: #bcff9d !important;
                 text-decoration:underline;
             }
+            .ArrowOnLeft, .ArrowOnRight{
+                position:absolute;
+                width:3.9vw !important;
+                z-index: 1;
+                top: 185.4vw !important;
+            }
+            .ArrowOnLeft{
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                left: 22%;
+            }
+            .ArrowOnRight{
+                left: 76%;
+            }
             #horizline, .LeftLine, .RightLine{
                 position: absolute;
                 top: 238.5vw;
@@ -377,6 +391,16 @@
                 .CallToAction i {
                     font-size:26px;
                 }
+                .ArrowOnLeft, .ArrowOnRight{
+                    top: 2167px !important;
+                    width:46px !important;
+                }
+                .ArrowOnRight{
+                    left: calc(50% + 300px) !important;
+                }
+                .ArrowOnLeft{
+                    left: calc(50% - 320px) !important;
+                }
             }
             @media screen and (max-width: 1100px) { 
                 .leaves{
@@ -395,7 +419,7 @@
                 }
             }
             @media screen and (max-width: 690px) { 
-                #FooterHalftone{
+                .ArrowOnLeft, .ArrowOnRight, #FooterHalftone{
                     display: none;
                 }
             }
