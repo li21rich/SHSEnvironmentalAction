@@ -216,7 +216,31 @@
                 font-size:1.35vw;
                 width:100vw;
             }  
-            .LeftLine, .RightLine{
+            .CallToAction{
+                position: absolute;
+                top: 182vw;
+                left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                font-family:Montserrat;
+                font-size: clamp(1rem, 2vw, 6.6rem);
+                display: inline-block;
+                text-align: center;
+                line-height: 2.8;
+                z-index:2;
+            }
+            .CallToAction i {
+                font-style: inherit !important;
+                font-size: clamp(1.1rem, 2.26vw, 6.9rem);
+            }
+            .CallToAction a{
+                font-weight: bold;
+            }
+            .CallToAction a, .Footer a, .Footer2 a {
+                color: #bcff9d !important;
+                text-decoration:underline;
+            }
+            #horizline, .LeftLine, .RightLine{
                 position: absolute;
                 top: 238.5vw;
                 height: 2px;
@@ -235,12 +259,12 @@
             .spacer{
                 position: relative;
                 width:100%;
-                height:5.5%;
+                height:5.91%;
                 visibility: hidden;
             }
             .articles{
                 position: relative;
-                padding: 2.5%;
+                margin: 2.5%;
                 width:52vw;
                 left: 50%;
                 transform: translateX(-50%);
@@ -341,6 +365,19 @@
                     top:0;
                 }
             }       
+            @media screen and (max-width:1152px){
+                #horizline{
+                    top:2205px;
+                }
+                .CallToAction{
+                    top:2128px;
+                    font-size:23px;
+                    width:100vw;
+                }
+                .CallToAction i {
+                    font-size:26px;
+                }
+            }
             @media screen and (max-width: 1100px) { 
                 .leaves{
                     display: none;
@@ -369,6 +406,15 @@
                 #Header{
                     font-size:3.15rem;
                     top:-5vw;
+                }
+                .CallToAction{
+                    font-size:19px;
+                }
+            }
+            @media screen and (max-width: 442px) { 
+                .CallToAction{
+                    top:2099px;
+                    line-height:2.4;
                 }
             }
             @media screen and (max-width: 376px){
@@ -442,6 +488,10 @@
                 <a href= "https://www.instagram.com/eac_shs/" target="_blank">Instagram</a>
             </p>
         </div>
+        <p class = "CallToAction">For sign-ups, social media, petitions and more:<br><i>Join us <a href = "https://linktr.ee/environmental_action_club" target="_blank">here</a></i></p>
+        <hr id = "horizline">
+        <img class = "CallToAction ArrowOnLeft" src="images/LeftArrow.png">
+        <img class = "CallToAction ArrowOnRight" src="images/LeftArrow.png">
         <hr class = "RightLine">
         <hr class = "LeftLine">
          <a href="https://www.facebook.com/groups/334285765697491/" target="_blank"><img class = "LeftLine FaceLogo" src="/images/FaceLogo.png"></a>
