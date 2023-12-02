@@ -189,7 +189,7 @@
                 font-weight: bold;
                 text-align: center;
                 position: relative;
-                top:1vw;
+                top:0.88vw;
             }
             .leaves{
                 position:absolute;
@@ -379,6 +379,9 @@
                     font-size:3.4rem;
                     top:0;
                 }
+                #Header i{
+                    visibility: hidden;
+                }   
             }       
             @media screen and (max-width:1070px){
                 #horizline{
@@ -460,7 +463,7 @@
             }
             @media screen and (max-width: 442px) { 
                 .CallToAction{
-                    top:2099px;
+                    top:2131px;
                     line-height:2.4;
                 }
             }
@@ -473,6 +476,11 @@
                 }
                 .articles{
                     width: 350px;
+                }
+            }
+            @media screen and (max-width: 340px){
+                .articles{
+                    width: 300px;
                 }
             }
         </style>
@@ -513,7 +521,7 @@
         <img class = "CustomLeaf LeafOne"/>
         <img class = "CustomLeaf LeafTwo"/>
         <img class = "CustomLeaf LeafThree"/>
-        <h1 id = "Header">Our Articles</h1>
+        <h1 id = "Header">Our Articles\n<i style = "font-size:2.8vw">For more articles, visit our <a href = "https://linktr.ee/environmental_action_club" target = "_blank">linktree</a></i></h1>
         <img class = "leaves one" src="/images/Leaves.svg">
         <img class = "leaves two" src="/images/Leaves.svg">
         <img class = "spacer" src = /images/Leaves.svg">
