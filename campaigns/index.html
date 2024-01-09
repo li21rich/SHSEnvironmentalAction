@@ -186,19 +186,17 @@
                 font-weight: bold;
                 text-align: center;
                 position: relative;
-                top:0.63vw;
+                top: -4.37vw;
             }
             #Header i{
                 line-height: 1;
                 font-weight: normal;
+                max-width:3vw;
             }
             #Header a{
                 line-height: 1;
                 font-weight: bold;
-            }
-            #Header br {
-               display: block;
-               margin: .2rem 0;
+                max-width:3vw;
             }
             #Accomplishments { 
                 font-weight: bold;
@@ -234,7 +232,7 @@
             #LinkList{
                 text-align: center;
                 color: green !important;
-                left: 50%;
+                display: inline-block;
             }
             .leaves{
                 position:absolute;
@@ -580,52 +578,54 @@
         <img class = "CustomLeaf LeafOne"/>
         <img class = "CustomLeaf LeafTwo"/>
         <img class = "CustomLeaf LeafThree"/>
-        <h1 id = "Header">Campaigns &<br>Accomplishments<br><i style = "font-size:1.5vw">Visit our <a href = "https://linktr.ee/environmental_action_club" target = "_blank">linktree</a> for more<br>campaign and petition info</i></h1>
-        <h2 id = "Accomplishments">Current Accomplishments</h2>
-        <div class="row">
-          <div class="column">
-            <h3 class = "Sections">Agendized a Moratorium</h3>
-              <ul>
-                  <li>Public comments on artificial turf at several Saratoga city council meetings</li>
-                  <li>Correspondence with city officials</li>
-                  <li>Contacted Santa Clara County Medical Association & asked them to write an official letter on artificial turf, which they sent to the school board & administration</li>
-                  <li>Emailed city council members on why plastic turf is harmful and what other cities have done against it</li>
-                  <li>Went to several city council meetings and gave public comments (2-3 min speeches)</li>
-                  <li>Consistently coordinated with council member Tina Walia</li>
-                  <li>Met with council member Belal Aftab</li>
-                  <li>Got an official Sierra Club letter sent to the school about artificial turf</li>
-                  <li>Sent our own letters to the Saratoga High School board and administration on artificial turf</li>
-                  <li>Made public comments at multiple Saratoga High School board meetings</li>
-                  <li>Posted article on Sierra Club’s weekly newsletter and website</li>
-              </ul>
-          </div>
-          <div class="column">
-            <h3 class = "Sections">Passed an ordinance</h3>
-            <ul>
-                <li>Collaborated with other environmental action organizations</li>
-                <li>Public comments on reusable utensils at Half Moon Bay city council meeting</li>
-                <li>Consistently meeting Sierra Club constituents</li>
-                <li>Tabled at a Silicon Valley Youth Climate Action Team</li>
-                <li>Assisted the Bay Area Youth Climate Action Team host their plastics webinar (feat Dianne Wolke)</li>
-                <li>Met with Millbrae’s mayor for passing Millbrae’s artificial turf moratorium</li>
-                <li>Gave speeches on Fridays for Future Palo Alto</li>
-                <li>Visited and made public comments at a Foster City city council meeting</li>
-                <li>Helped get artificial turf agendized at Foster city</li>
-                <li>… and we are currently collaborating with the Green Committee to remove SHS’s artificial turf</li>
-            </ul>
-          </div>
-        </div>
+        <h1 id = "Header">Campaigns &<br>Accomplishments<br><i style = "font-size:1.5vw">Visit our <a href = "https://linktr.ee/environmental_action_club" target = "_blank">linktree</a> for more campaign and petition info</i></h1>
         <img class = "leaves one" src="/images/Leaves.svg">
         <img class = "leaves two" src="/images/Leaves.svg">
         <img class = "spacer" src = /images/Leaves.svg">
-        <p id = "Also">Also check out:</p>
-        <ul id = "LinkList">
-            <li><a href = "https://www.ycats.org/our-campaign-against-artificial-turf-at-saratoga-high-school" target="_blank">Preventing Artificial Turf at SHS</a></li>
-            <li><a href = "https://chng.it/ybcg8KCr56" target="_blank">Replacing Artificial Turf at SHS with real grass</a></li>
-            <li><a href = "https://chng.it/wc6Qd8GN76" target="_blank">Support AB38, the Night Sky Bill</a></li>
-            <li><a href = "https://www.change.org/p/support-sb499-the-heat-mitigation-bill" target="_blank">Support SB499, the Heat Mitigation Bill</a></li>
-            <li><a href = "https://www.change.org/p/support-ab1423-to-ban-toxic-pfas-forever-chemicals?signed=true">Support AB1423 to ban toxic PFAS (Forever Chemicals)</a></li>
-        </ul>
+        <p id = "Also">Some campaign resources:</p>
+        <div style = "text-align:center;">
+            <ul id = "LinkList">
+                <li><a href = "https://www.ycats.org/our-campaign-against-artificial-turf-at-saratoga-high-school" target="_blank">Preventing Artificial Turf at SHS</a></li>
+                <li><a href = "https://chng.it/ybcg8KCr56" target="_blank">Replacing Artificial Turf at SHS with real grass</a></li>
+                <li><a href = "https://chng.it/wc6Qd8GN76" target="_blank">Support AB38, the Night Sky Bill</a></li>
+                <li><a href = "https://www.change.org/p/support-sb499-the-heat-mitigation-bill" target="_blank">Support SB499, the Heat Mitigation Bill</a></li>
+                <li><a href = "https://www.change.org/p/support-ab1423-to-ban-toxic-pfas-forever-chemicals?signed=true">Support AB1423 to ban toxic PFAS (Forever Chemicals)</a></li>
+            </ul>
+        </div>
+        <h2 id = "Accomplishments">Current Accomplishments</h2>
+        <div class="row">
+            <div class="column">
+                <h3 class = "Sections">Agendized a Moratorium</h3>
+                <ul>
+                    <li>Public comments on artificial turf at several Saratoga city council meetings</li>
+                    <li>Correspondence with city officials</li>
+                    <li>Contacted Santa Clara County Medical Association & asked them to write an official letter on artificial turf, which they sent to the school board & administration</li>
+                    <li>Emailed city council members on why plastic turf is harmful and what other cities have done against it</li>
+                    <li>Went to several city council meetings and gave public comments (2-3 min speeches)</li>
+                    <li>Consistently coordinated with council member Tina Walia</li>
+                    <li>Met with council member Belal Aftab</li>
+                    <li>Got an official Sierra Club letter sent to the school about artificial turf</li>
+                    <li>Sent our own letters to the Saratoga High School board and administration on artificial turf</li>
+                    <li>Made public comments at multiple Saratoga High School board meetings</li>
+                    <li>Posted article on Sierra Club’s weekly newsletter and website</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class = "Sections">Passed an ordinance</h3>
+                <ul>
+                    <li>Collaborated with other environmental action organizations</li>
+                    <li>Public comments on reusable utensils at Half Moon Bay city council meeting</li>
+                    <li>Consistently meeting Sierra Club constituents</li>
+                    <li>Tabled at a Silicon Valley Youth Climate Action Team</li>
+                    <li>Assisted the Bay Area Youth Climate Action Team host their plastics webinar (feat Dianne Wolke)</li>
+                    <li>Met with Millbrae’s mayor for passing Millbrae’s artificial turf moratorium</li>
+                    <li>Gave speeches on Fridays for Future Palo Alto</li>
+                    <li>Visited and made public comments at a Foster City city council meeting</li>
+                    <li>Helped get artificial turf agendized at Foster city</li>
+                    <li>… and we are currently collaborating with the Green Committee to remove SHS’s artificial turf</li>
+                </ul>
+            </div>
+        </div>
         <div class="Footer">
             <h3>About</h3>
             <p>
