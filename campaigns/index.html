@@ -202,6 +202,13 @@
                 right:-2px;
                 left:auto;
             }
+            .row {
+              display: flex;
+            }
+            
+            .column {
+              flex: 50%;
+            }
             #copyright {
                 position: absolute;
                 text-align:center;
@@ -446,6 +453,11 @@
                     content:url("/images/mobilearticle3.PNG") !important;
                 }
             }
+            @media screen and (max-width: 580px) {
+              .column {
+                width: 100%;
+              }
+            }
             @media screen and (max-width: 501px) { 
                 #FooterLogo{
                     width:60px;
@@ -480,6 +492,7 @@
                     width: 300px;
                 }
             }
+            
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="icon" type="image/png" href="https://shseac.org/roundbg.png?v=2" />
