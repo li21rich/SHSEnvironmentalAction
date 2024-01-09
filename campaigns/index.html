@@ -27,27 +27,6 @@
                 font-size: 100%;
                 margin: 0;
             }    
-            h2 { 
-                font-weight: bold;
-                font-size: 4rem;
-                color: green;
-            }
-            h3{
-                font-weight: bold;
-                font-size: 2.4rem;
-                color:#006400;
-            }
-            li{
-                padding:5px;
-                line-height: 2;
-                font-size: 1.5rem;
-                font-style: Montserrat;
-                color: gray;
-            }
-            ul{
-              display: inline-block;
-              text-align: left;
-            }
             mark {
               background-color: #f7fff6ff;
               color: inherit;
@@ -210,8 +189,34 @@
                 top:0.88vw;
             }
             #Header i{
-                line-height:1;
                 font-weight: normal;
+            }
+            #Header i, a{
+                line-height:1;
+            }
+            #Accomplishments { 
+                font-weight: bold;
+                font-size: 4rem;
+                color: green;
+                font-family: Montserrat;
+                text-align: center;
+            }
+            .Sections{
+                font-weight: bold;
+                font-size: 2.4rem;
+                color:#006400;
+                font-family: 'Roboto';
+            }
+            li{
+                padding:1.5vw;
+                line-height: 2;
+                font-size: 1.5rem;
+                font-family: Montserrat;
+                color: gray;
+            }
+            ul{
+              display: inline-block;
+              text-align: left;
             }
             .leaves{
                 position:absolute;
@@ -558,10 +563,10 @@
         <img class = "CustomLeaf LeafTwo"/>
         <img class = "CustomLeaf LeafThree"/>
         <h1 id = "Header">Campaigns &<br>Accomplishments<br><i style = "font-size:1.5vw">Visit our <a href = "https://linktr.ee/environmental_action_club" target = "_blank">linktree</a> for more<br>campaign and petition info</i></h1>
-        <h2>Current Accomplishments</h2>
-        <div class="row" style = "font-style: Montserrat">
+        <h2 id = "Accomplishments">Current Accomplishments</h2>
+        <div class="row">
           <div class="column">
-            <h3 style = "font-style: Roboto">Agendized a Moratorium</h3>
+            <h3 class = "Sections">Agendized a Moratorium</h3>
               <ul>
                   <li>Public comments on artificial turf at several Saratoga city council meetings</li>
                   <li>Correspondence with city officials</li>
@@ -577,7 +582,7 @@
               </ul>
           </div>
           <div class="column">
-            <h3 style = "font-style: Roboto">Passed an ordinance</h3>
+            <h3 class = "Sections">Passed an ordinance</h3>
             <ul>
                 <li>Collaborated with other environmental action organizations</li>
                 <li>Public comments on reusable utensils at Half Moon Bay city council meeting</li>
