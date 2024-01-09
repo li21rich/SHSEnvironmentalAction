@@ -1,1 +1,603 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
+        <title>Campaigns</title>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat|Montserrat:400,700' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/gill-sans-mt-2" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html {
+                overflow-x: hidden !important;
+            }
+            body {
+                overflow-x: hidden !important;
+                background-image: url("/images/AboutUsBackground.svg");
+                background-position: center top;
+                height: 247vw;
+                min-height: 2639px;
+                background-size: cover;
+                background-attachment: scroll;
+                background-repeat: no-repeat; 
+                overflow-y: hidden;
+                overflow-x: hidden;
+                font-size: 100%;
+                margin: 0;
+            }    
+            mark {
+              background-color: #f7fff6ff;
+              color: inherit;
+            }
+            .icon {
+                color: #F5F5EF !important;
+                background-color: transparent;
+                transition: color 0.3s;
+                margin-top: 21px;
+                margin-right: 1.9vw;
+                padding: 10px 15px;
+                display: block;
+                position: absolute;
+                font-size:3.3rem;
+                right: 0;
+                top: 0;
+                z-index:3;
+            }
+            .LinksMenu {
+                display: block;
+                display: none;
+                position: absolute;
+                right:0px;
+                margin-right: 1.9vw;
+                top: 101px;
+                width: 50vw;
+                padding-top: 2%;
+                padding-bottom:2%;
+                text-decoration: none;
+                font-family: Montserrat;
+                font-weight: 400;
+                line-height:1.6;
+                font-size:1.7rem;
+                background-color: #2C4025;
+                z-index: 3;
+            }
+            .LinksMenu a:hover{
+                background-color: #348138;
+            }
+            .LinksMenu a{
+                color: #F5F5EF !important;
+                text-decoration: none !important;
+                display: inherit !important;
+            }
+            #referencePoint{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 2px;
+                width: 100%;
+                opacity: 0.0;
+            }
+            #TopBanner{
+                width: 108%;
+                min-width: 1250px;
+                object-fit: cover;
+                height: auto;
+                position: relative;
+                z-index: 1;
+                top: -8px;
+                left: -8px;
+                overflow-x: hidden;
+                padding: 0;
+            }    
+            .logoBox{
+                width: 7.2vw;
+                min-width: 85px;
+                height: auto;
+                position:absolute;
+                z-index: 2;
+                top: clamp(21px, 1.9vw, 800px);
+                left: 1.9vw;
+            }
+            .logoBox img{
+                display:block;
+                margin: 0 auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .logoTextBox{
+                width: 16vw;
+                min-width: 178px;
+                height: auto;
+                position:absolute;
+                z-index: 2;
+                top: clamp(26px, 2.85vw, 800px);
+                left: clamp(127px, 10.6vw, 800px);
+            }
+            .logoTextBox img{
+                display:block;
+                margin: 0 auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .BannerButtons{
+                position: absolute;
+                border-radius: 9px;
+                border: 4px solid #1d3712ff;
+                top:8.1vh;
+                font-size: clamp(1rem, 1.5vw,5.5rem);
+                font-family: 'Roboto';
+                text-align: center;
+                display: inline-block;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                text-decoration: none;
+                cursor: pointer;
+                font-weight: bold;
+                z-index: 2;
+                word-wrap: break-word;
+                margin-right: 1.5vw;
+                width:11vw;
+                /*
+                background-color: #F5F5EF;
+                color: #37512cff;
+                */
+                background-color: #1d3712ff;
+                color: #F5F5EF;
+            }
+            .BannerButtons:hover {
+                box-shadow: 0 7px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .ArticlesButton{
+                right: 28vw;
+            }
+            .CampaignsButton{
+                right: 15.5vw;
+            }
+            .AboutUsButton{
+                right: 3vw;
+            }
+            .CustomLeaf{
+                content:url("/images/CustomLeaf.png");
+                position: absolute;
+                width: 4.8%;
+                height: auto;
+                z-index: 2;
+            }
+            .LeafOne{
+                right:26.5vw;
+                top:2.6vh;
+                transform: rotate(316deg);
+            }
+            .LeafTwo{
+                right:14.95vw;
+                top:3.93vh;
+                transform: rotate(359deg);
+            }
+            .LeafThree{
+                right:4.6vw;
+                top:11.1vh;
+                transform: rotate(60deg);
+            }
+            #Header{
+                font-family: Montserrat;
+                font-size: 5.12vw;
+                font-weight: bold;
+                text-align: center;
+                position: relative;
+                top:0.88vw;
+            }
+            .leaves{
+                position:absolute;
+                width: 26.7vw;
+            }
+            .one{
+                top:14.6vw;
+                left:-2px;
+            }
+            .two{
+                top:20.1vw;
+                transform: rotate(180deg); 
+                right:-2px;
+                left:auto;
+            }
+            #copyright {
+                position: absolute;
+                text-align:center;
+                left: 50%;
+                top:242vw;
+                transform: translateX(-50%);
+                color:#6a9f52;
+                font-family: Arial, sans-serif;
+                font-size:1.35vw;
+                width:100vw;
+            }  
+            .CallToAction{
+                position: absolute;
+                top: 203vw;
+                left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                font-family:Montserrat;
+                font-size: clamp(1rem, 2vw, 6.6rem);
+                display: inline-block;
+                text-align: center;
+                line-height: 2.8;
+                z-index:2;
+            }
+            .CallToAction i {
+                font-style: inherit !important;
+                font-size: clamp(1.1rem, 2.26vw, 6.9rem);
+            }
+            .CallToAction a{
+                font-weight: bold;
+            }
+            .CallToAction a, .Footer a, .Footer2 a {
+                color: #bcff9d !important;
+                text-decoration:underline;
+            }
+            .ArrowOnLeft, .ArrowOnRight{
+                position:absolute;
+                width:3.9vw !important;
+                z-index: 1;
+                top: 206.4vw !important;
+            }
+            .ArrowOnLeft{
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                left: 22%;
+            }
+            .ArrowOnRight{
+                left: 76%;
+            }
+            #horizline, .LeftLine, .RightLine{
+                position: absolute;
+                top: 238.5vw;
+                height: 2px;
+                border-width: 0;
+                background-color:#4f6346;
+                width: 22%;
+                left: 36%;
+                text-align: center;
+            }
+            .LeftLine{
+                left:21%;
+            }
+            .RightLine{
+                right:-4%;
+            }
+            .spacer{
+                position: relative;
+                width:100%;
+                height:5.91%;
+                visibility: hidden;
+            }
+            .articles{
+                position: relative;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+                width:52vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }      
+            .articles:hover{
+                opacity: 0.667;
+            }
+            .Footer, .Footer2{  
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                color: #95dc76;
+                font-family: Arial, sans-serif;
+                z-index:2;
+                line-height:.08;
+                top:225vw;
+                font-size:1.38vw;
+            }
+            .Footer h3, .Footer2 h3{
+                margin-bottom:35px;
+            }
+            .Footer{
+                right:52%;
+                text-align: right;
+            }
+            .Footer2{
+                left:52%;
+                text-align: left;
+            }
+            .Footer a, .Footer2 a {
+                color: #bcff9d !important;
+                text-decoration:underline;
+            }
+            .InstaLogo, .FaceLogo{
+                width:3.6vw;
+                height:auto;
+                top:237.5vw;
+            }
+            .InstaLogo{
+                left:51.1vw;
+            }
+            .FaceLogo{
+                left:44.6vw;
+            }
+            #FooterLogo{
+                position:absolute;
+                left:45px;
+                top:241.4vw;
+                width:9vw;
+            }
+            #FooterHalftone{
+                position:absolute;
+                left:auto;
+                top:234.3vw;
+                right:0;
+                width:11.5vw;
+            }
+            @media screen and (min-width: 921px) {
+                .LinksMenu, .icon {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 1070px) { 
+                .Footer, .Footer2{  
+                    top:2410px;
+                    font-size:14px;
+                }
+                .LeftLine, .RightLine{
+                    top:2560px;
+                    width:241px;
+                }
+                #copyright { 
+                    font-size:14px;
+                    top:2600px;
+                }
+                .InstaLogo, .FaceLogo{
+                    width:40px;
+                    top:2550px;
+                }
+                .FaceLogo{
+                    left:auto;
+                    right:49.9vw;
+                }
+                .InstaLogo{
+                    left:50.8vw;
+                }
+                #FooterLogo{
+                    top: 2572px;
+                    left:25px;
+                    width:80px;
+                }
+                #FooterHalftone{
+                    top:2476px;
+                    width:150px;
+                }
+                #Header{
+                    font-size:3.4rem;
+                    top:0;
+                }
+                #Header i{
+                    display: none;
+                }   
+            }       
+            @media screen and (max-width:1070px){
+                #horizline{
+                    top:2237px;
+                }
+                .CallToAction{
+                    top:2160px;
+                    font-size:23px;
+                    width:100vw;
+                }
+                .CallToAction i {
+                    font-size:26px;
+                }
+                .ArrowOnLeft, .ArrowOnRight{
+                    top: 2199px !important;
+                    width:46px !important;
+                }
+                .ArrowOnRight{
+                    left: calc(50% + 300px) !important;
+                }
+                .ArrowOnLeft{
+                    left: calc(50% - 320px) !important;
+                }
+                .articles{
+                    width:555px;
+                }
+            }
+            @media screen and (max-width: 1100px) { 
+                .leaves{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 920px) { 
+                .BannerButtons, .CustomLeaf {
+                    display: none !important;
+                }
+                .LeftLine, .RightLine{
+                    visibility: hidden;
+                }
+                .InstaLogo, .FaceLogo{
+                    visibility: visible !important;
+                }
+            }
+            @media screen and (max-width: 690px) { 
+                .ArrowOnLeft, .ArrowOnRight, #FooterHalftone{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 640px) { 
+                .articles{
+                    width: 97vw;
+                }
+            }
+            @media screen and (max-width: 580px) { 
+                .articles{
+                    width: 374px;
+                }
+                .first{
+                    content:url("/images/mobilearticle1.PNG") !important;
+                }
+                .second{
+                    content:url("/images/mobilearticle2.PNG") !important;
+                }
+                .third{
+                    content:url("/images/mobilearticle3.PNG") !important;
+                }
+            }
+            @media screen and (max-width: 501px) { 
+                #FooterLogo{
+                    width:60px;
+                }
+                #Header{
+                    font-size:3.15rem;
+                    top:-5vw;
+                }
+                .CallToAction{
+                    font-size:19px;
+                }
+            }
+            @media screen and (max-width: 442px) { 
+                .CallToAction{
+                    top:2131px;
+                    line-height:2.4;
+                }
+            }
+            @media screen and (max-width: 376px){
+                #copyright{
+                    font-size:12px;
+                }
+                #FooterLogo{
+                    display:none;
+                }
+                .articles{
+                    width: 350px;
+                }
+            }
+            @media screen and (max-width: 340px){
+                .articles{
+                    width: 300px;
+                }
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="https://shseac.org/roundbg.png?v=2" />
+    </head>
+    <body style="background-color:White;">
+        <img id = "TopBanner" src="/images/TopBanner3.svg">
+        <div class="LinksMenu">
+            <a href="https://shseac.org/articles/" style="padding-left: 12%;">Articles</a>
+            <!--<a href="https://shseac.org/campaigns/" style="padding-left: 12%;">Campaign</a>-->
+            <a href="https://shseac.org/about-us/" style="padding-left: 12%;">About Us</a>
+        </div>
+        <a href="#" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://shseac.org/">
+            <div class="logoBox">
+                <img src="/images/birdgreen23.svg" alt="Environmental Action Club Logo">
+            </div>
+            <div class="logoTextBox">
+                <img src="/images/BrandText3.svg" alt="Environmental Action Club Logo">
+            </div>
+        </a>
+        <img id = "referencePoint" src="/images/CustomLeaf.png">
+        <form>
+            <button class="BannerButtons ArticlesButton" formaction="https://shseac.org/articles/">Articles
+            </button>
+        </form>
+        <form>
+            <button class="BannerButtons CampaignsButton" formaction="https://shseac.org/campaigns/">Campaigns
+            </button>
+        </form>
+        <form>
+            <button class="BannerButtons AboutUsButton" formaction="https://shseac.org/about-us/">About Us
+            </button>
+        </form>
+        <img class = "CustomLeaf LeafOne"/>
+        <img class = "CustomLeaf LeafTwo"/>
+        <img class = "CustomLeaf LeafThree"/>
+        <h1 id = "Header">Our Campaigns<br><i style = "font-size:2vw">For more articles, visit our <a href = "https://linktr.ee/environmental_action_club" target = "_blank">linktree</a></i></h1>
+        <img class = "leaves one" src="/images/Leaves.svg">
+        <img class = "leaves two" src="/images/Leaves.svg">
+        <img class = "spacer" src = /images/Leaves.svg">
+        <a href = "https://www.ycats.org/our-campaign-against-artificial-turf-at-saratoga-high-school" target="_blank">Preventing Artificial Turf at SHS</a>
+        <div class="Footer">
+            <h3>About</h3>
+            <p>
+                <a href = "https://shseac.org/about-us/">About us</a> 
+                <p><br></p>
+                <a href= "https://linktr.ee/environmental_action_club" target="_blank">Sign up & other<br><br><br><br><br><br><br><br><br><br><br><br>Important Links</a>
+            </p>
+        </div>
+        <div class="Footer2">
+            <h3>Contact</h3>
+            <p>
+                <p>saratoga.eac@gmail.com</p> 
+                <p><br></p>
+                <a href= "https://www.facebook.com/groups/334285765697491/" target="_blank">Facebook</a> 
+                <p><br></p>
+                <a href= "https://www.instagram.com/eac_shs/" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <p class = "CallToAction">For sign-ups, social media, petitions and more:<br><i>Join us <a href = "https://linktr.ee/environmental_action_club" target="_blank">here</a></i></p>
+        <hr id = "horizline">
+        <img class = "CallToAction ArrowOnLeft" src="/images/NewLeftArrow.svg">
+        <img class = "CallToAction ArrowOnRight" src="/images/NewLeftArrow.svg">
+        <hr class = "RightLine">
+        <hr class = "LeftLine">
+         <a href="https://www.facebook.com/groups/334285765697491/" target="_blank"><img class = "LeftLine FaceLogo" src="/images/FaceLogo.png"></a>
+         <a href="https://www.instagram.com/eac_shs/" target="_blank"><img class = "RightLine InstaLogo" src="/images/InstaLogo.png"></a>
+        <p id = "copyright">© 2023 Environmental Action Club All rights reserved.</p>
+        <a href="https://shseac.org/"><img id = "FooterLogo" src="/images/FooterLogo.png"></a>
+        <img id = "FooterHalftone" src="/images/FooterHalftone.png">
+        <script>
+            <!--JQuery imported because convenient-->
+            $(document).ready(function(){
+                var element = document.querySelector('#referencePoint');
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            $('#canvas').mousedown(function(){          
+                $(this).css('cursor','move');
+                return false;       
+            });
+            window.addEventListener("keydown", function(e) {
+                if(e.key.startsWith("Arrow")) {
+                    e.preventDefault();
+                }
+            }, false);
+            document.querySelector(".icon").addEventListener('click', function(event) {
+                dropdown();
+                event.stopPropagation();
+            });
+            document.querySelector('.icon').addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+            function dropdown() {
+                var linksMenu = document.querySelector(".LinksMenu");
+                var icon = document.querySelector(".icon");
+                if (linksMenu.style.display === "block") {
+                    linksMenu.style.display = "none";
+                    icon.style.backgroundColor = "transparent";
+                } else {
+                    linksMenu.style.display = "block";
+                    icon.style.backgroundColor = "black";
+                }
+            }
+            document.addEventListener('click', function(event) {
+                const linksMenu = document.querySelector('.LinksMenu');
+                if (linksMenu.style.display === 'block' && !event.target.closest('.icon')) {
+                    linksMenu.style.display = 'none';
+                    document.querySelector('.icon').style.backgroundColor = 'transparent';
+                }
+            });
+            $(window).resize(function() {
+                if ($(window).width() > 920) {
+                    $('.LinksMenu').hide();
+                    $('.icon').css('background-color', 'transparent');
+                }
+            });
+        </script>
+    </body>
+</html>
