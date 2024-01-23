@@ -541,9 +541,9 @@
                 ul{
                     width:92%;
                 }
-                #Header a{
+                #Header a, li{
                     line-height: .8;
-                    font-size: 1rem;
+                    font-size: 1.5rem !important;
                     max-width:15vw;
                 }
                 #Resources{
@@ -592,6 +592,11 @@
                 width: 100%;
               }
             }
+            @media screen and (max-width: 580px) {
+              .#Header{
+                font-size:3rem;
+              }
+            }
             @media screen and (max-width: 501px) { 
                 #FooterLogo{
                     width:60px;
@@ -602,6 +607,10 @@
                 }
                 .CallToAction{
                     font-size:19px;
+                }
+                li{
+                   font-size:.88rem;
+                    line-height:1.05;
                 }
             }
             @media screen and (max-width: 442px) { 
