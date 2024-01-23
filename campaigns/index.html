@@ -295,6 +295,7 @@
                 position: relative;
                 top:-3vw;
                 width:7vw;
+                display: initial;
             }
             #copyright {
                 position: absolute;
@@ -505,7 +506,18 @@
                     display: none;
                 }
             }
-            @media screen and (max-width: 900px){
+            @media screen and (max-width: 920px) { 
+                .BannerButtons, .CustomLeaf {
+                    display: none !important;
+                }
+                .LeftLine, .RightLine{
+                    visibility: hidden;
+                }
+                .InstaLogo, .FaceLogo{
+                    visibility: visible !important;
+                }
+            
+            @media screen and (max-width: 890px){
                 .row{
                     display:flex;
                     flex-direction:column;
@@ -516,16 +528,15 @@
                     width: 100vw;
                     display:block;
                 }
-            }
-            @media screen and (max-width: 920px) { 
-                .BannerButtons, .CustomLeaf {
-                    display: none !important;
+                #mascot{
+                    display: none;
                 }
-                .LeftLine, .RightLine{
-                    visibility: hidden;
+                li{
+                    line-height:1.15
                 }
-                .InstaLogo, .FaceLogo{
-                    visibility: visible !important;
+                #Header{
+                    margin-top:0.6vw;
+                    margin-bottom:1vw;
                 }
             }
             @media screen and (max-width: 690px) { 
