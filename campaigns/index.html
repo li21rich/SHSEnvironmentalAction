@@ -546,18 +546,27 @@
                 }
                 #Header a, li{
                     line-height: .8;
-                    font-size: 1rem !important;
+                    font-size: .9rem !important;
                 }
                 #Resources{
                     font-size:1.5rem;
                 }
                 #Accomplishments{
                     font-size:1.5rem;
-                    top:12vw;
+                    top:100px !important;
                 }
                 .Sections{
                     margin:0;
+                    top:5.5vw;
                     font-size:1.34rem;
+                }
+                #LinkList{
+                    margin:0;
+                    padding:0;
+                    left:0;
+                    font-size:.9rem;
+                    width:100%;
+                    line-height:.95;
                 }
             }
             @media screen and (max-width: 740px) { 
@@ -569,6 +578,10 @@
                     margin:2px;
                     padding:5px;
                 }
+                #LinkList{
+                    text-overflow: ellipsis;
+                    font-size:.85rem;
+                }
             }
             @media screen and (max-width: 690px) { 
                 .ArrowOnLeft, .ArrowOnRight, #FooterHalftone{
@@ -578,6 +591,9 @@
             @media screen and (max-width: 640px) { 
                 .articles{
                     width: 97vw;
+                }
+                .Sections{
+                    top:37px;
                 }
             }
             @media screen and (max-width: 580px) { 
@@ -601,7 +617,8 @@
             }
             @media screen and (max-width: 580px) {
               .#Header{
-                font-size:3rem;
+                font-size:2rem;
+                top: 20px;
               }
             }
             @media screen and (max-width: 501px) { 
