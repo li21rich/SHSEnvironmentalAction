@@ -505,6 +505,18 @@
                     display: none;
                 }
             }
+            @media screen and (max-width: 900px){
+                .row{
+                    display:flex;
+                    flex-direction:column;
+                    flex-wrap: wrap;
+                    max-width:100%;
+                }
+                .column{
+                    width: 100vw;
+                    display:block;
+                }
+            }
             @media screen and (max-width: 920px) { 
                 .BannerButtons, .CustomLeaf {
                     display: none !important;
