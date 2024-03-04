@@ -136,7 +136,7 @@
                 cursor: pointer;
                 font-weight: bold;
                 z-index: 2;
-                word-wrap: break-word;
+                <!--word-wrap: break-word;-->
                 margin-right: 1.5vw;
                 width:11vw;
                 /*
@@ -150,13 +150,16 @@
                 box-shadow: 0 7px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
             }
             .ArticlesButton{
-                right: 28vw;
+                right: 40.5vw;
             }
             .CampaignsButton{
-                right: 15.5vw;
+                right: 28vw;
             }
             .AboutUsButton{
-                right: 3vw;
+                right: 15.5vw;
+            }
+            .ContributorsButton{
+                right: 3vw
             }
             .CustomLeaf{
                 content:url("/images/CustomLeaf.png");
@@ -496,6 +499,7 @@
             <a href="https://shseac.org/articles/" style="padding-left: 12%;">Articles</a>
             <a href="https://shseac.org/campaigns/" style="padding-left: 12%;">Campaign</a>
             <a href="https://shseac.org/about-us/" style="padding-left: 12%;">About Us</a>
+            <a href="https://shseac.org/contributors/" style="padding-left: 12%;">Contributors</a>
         </div>
         <a href="#" class="icon">
             <i class="fa fa-bars"></i>
@@ -519,6 +523,10 @@
         </form>
         <form>
             <button class="BannerButtons AboutUsButton" formaction="https://shseac.org/about-us/">About Us
+            </button>
+        </form>
+        <form>
+            <button class="BannerButtons ContributorsButton" formaction="https://shseac.org/contributors/">Contributors
             </button>
         </form>
         <img class = "CustomLeaf LeafOne"/>
