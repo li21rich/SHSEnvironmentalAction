@@ -1,11 +1,6 @@
 # SHSEnvironmentalAction
 Saratoga High School Environmental Action Club
-
-Pages:
-Main Page (complete)
-About Us (in progress)
-Articles (incomplete)
-Campaigns (incomplete)
+Get Involved through our website, shseac.org.
 
 Other Links:
 https://linktr.ee/environmental_action_club
