@@ -1,7 +1,6 @@
 # SHSEnvironmentalAction
-Saratoga High School Environmental Action Club
+site moved to https://li21rich.github.io/SHSEnvironmentalAction/
+URLs/embeds are now deprecated
 
-# Get Involved through our website, shseac.org.
-
-Other Links:
+Other links:
 https://linktr.ee/environmental_action_club
